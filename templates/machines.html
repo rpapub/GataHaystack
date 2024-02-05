@@ -1,0 +1,16 @@
+<!-- templates/machine.html -->
+{% extends "base.html" %} {% block title %} Machines {% endblock %} {% block
+content %}
+<h2>{{ app_name }} - Machine Details</h2>
+<div class="machines">
+  {% for machine in machines %}
+  <div class="machine">
+    <h3>{{ machine.Name }}</h3>
+    <p>Type: {{ machine.Type }}</p>
+    <p>License Key: {{ machine.LicenseKey }}</p>
+    <!-- Add more machine details as needed -->
+    {{ machine }}
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

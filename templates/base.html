@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ settings.app_name }}</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/" class="header-link">{{ settings.app_name }}</a></h1>
+      <span>{{ settings.summary }}</span>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="/oauth2_uipath/request_access_token_with_clientid">Auth</a>
+        </li>
+        <li><a href="/deauth">Deauth</a></li>
+        <li><a href="/uipathcloud/machines">Machines</a></li>
+        <li><a href="#">Tenants</a></li>
+        <li>
+          <a href="https://cloud.uipath.com/" target="_blank">UiPath Cloud</a>
+        </li>
+        <li><a href="/docs" target="_swagger">Swagger</a></li>
+      </ul>
+    </nav>
+    <main>{% block content %} {% endblock %}</main>
+    <footer>
+      <p>{{ settings.summary }}<br />© 2024 Admin Page. All rights reserved.</p>
+      {{ settings }}
+    </footer>
+  </body>
+</html>

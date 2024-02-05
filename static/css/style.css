@@ -1,0 +1,97 @@
+:root {
+    /* Solarized Light Color Scheme */
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--base3);
+    color: var(--base00);
+}
+
+header {
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    background-color: var(--base2);
+    padding: 0 20px; /* Adjust padding to only sides */
+    height: 80px; /* Small height */
+    text-align: center;
+}
+
+header h1 {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    background-color: var(--orange);
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--base03);
+    font-weight: bold;
+    padding: 10px 15px; /* Adds padding around the nav items */
+    border-radius: 5px; /* Optional: adds a slight rounding to the corners */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for mouseover */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: var(--orange); /* Changes background on hover */
+    color: var(--base3); /* Changes text color on hover */
+}
+
+.header-link {
+    color: var(--base00);
+    text-decoration: none; /* Remove underline */
+    background-color: transparent; /* No background */
+    cursor: text; /* Make the cursor appear as default text cursor */
+    padding: 0;
+}
+
+.header-link:hover, .header-link:active, .header-link:focus {
+    color: var(--base00);
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--base2);
+    color: var(--base01);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
