@@ -14,11 +14,6 @@ def get_settings():
 
 print("############")
 print("############")
-print("############")
-print("############")
-print("############")
-print("############")
-print("############")
 
 #SecureDumpModel extends BaseModel to enhance data security by masking sensitive fields for logging.
 class Settings(BaseSettings):

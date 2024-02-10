@@ -17,18 +17,16 @@
           <a href="/oauth2_uipath/request_access_token_with_clientid">Auth</a>
         </li>
         <li><a href="/deauth">Deauth</a></li>
-        <li><a href="/uipathcloud/machines">Machines</a></li>
-        <li><a href="#">Tenants</a></li>
         <li>
-          <a href="https://cloud.uipath.com/" target="_blank">UiPath Cloud</a>
+          <a href="https://cloud.uipath.com/" target="_uipath">UiPath Cloud</a>
         </li>
         <li><a href="/docs" target="_swagger">Swagger</a></li>
+        <li><a href="/uipathcloud/loop">debug</a></li>
       </ul>
     </nav>
     <main>{% block content %} {% endblock %}</main>
     <footer>
       <p>{{ settings.summary }}<br />© 2024 Admin Page. All rights reserved.</p>
-      {{ settings }}
     </footer>
   </body>
 </html>

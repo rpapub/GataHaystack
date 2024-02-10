@@ -90,7 +90,7 @@ footer {
     background-color: var(--base2);
     color: var(--base01);
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     padding: 10px 0;

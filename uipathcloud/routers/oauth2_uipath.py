@@ -181,10 +181,10 @@ async def oauth2_receive_authcode(request: Request, code: str, settings: Annotat
         if not success:
             raise HTTPException(status_code=404, detail="Organization or application not found.")
 
-
         # The matched_app is updated in-place, and since it's a reference within the settings.uipathcloud_organizations list,
         # the update is reflected across the entire settings structure without additional action.
     return RedirectResponse(url="/")
+    #return RedirectResponse(url="https://cloud.uipath.com/portal_/logout")
     
     # # Construct the URL for the API call to verify the access token
     # # Assuming 'settings' is already available here, either passed as a parameter or accessible globally

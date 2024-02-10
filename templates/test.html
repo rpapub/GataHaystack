@@ -1,0 +1,166 @@
+<!-- templates/machine.html -->
+{% extends "base.html" %}{% block content %}
+<ul>
+  {% for organization in settings.uipathcloud_organizations %}
+  <li>
+    <strong>Organization:</strong> {{ organization.name }}<br />
+    <strong>UUID:</strong> {{ organization.uuid }}<br />
+    <strong>Account Type:</strong> {{ organization.accountType }}<br />
+    <strong>License Code:</strong> {{ organization.licenseCode }}<br />
+    <strong>Country:</strong> {{ organization.country }}
+    <ul>
+      <li>
+        <strong
+          >Applications configured in Gata Haystack ({{
+          organization.applications | length }}):</strong
+        >
+        <ul>
+          {% for app in organization.applications %}
+          <li>
+            <strong>App Name:</strong> {{ app.app_name }}<br />
+            <strong>Client ID:</strong> {{ app.client_id }}<br />
+            <strong>Scope:</strong> {{ app.scope }}<br />
+            <strong>Redirect URL:</strong> {{ app.redirect_url }}<br />
+            <strong>Access Tokens:</strong>
+            <ul>
+              {% for token in app.access_tokens %}
+              <li>
+                <strong>Grant Type:</strong> {{ token.grant_type }}<br />
+                <strong>Access Token:</strong> {{ token.access_token }}<br />
+                <strong>Refresh Token:</strong> {{ token.refresh_token }}<br />
+                <strong>Token Expires:</strong> {{ token.token_expires }}<br />
+                <strong>Token Type:</strong> {{ token.token_type }}
+              </li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li>
+        <strong>Tenants ({{ organization.tenants | length }}):</strong><br />
+        {{ organization.tenants | map(attribute='name') | join(', ') }}
+        <ul>
+          {% for tenant in organization.tenants %}
+          <li>
+            <strong>Tenant Name:</strong> {{ tenant.name }}<br />
+            <strong>ID:</strong> {{ tenant.id }}<br />
+            <strong>Enabled Services:</strong> {{ tenant.enabledServices |
+            join(', ') }}<br />
+            <strong>Is Canary Tenant:</strong> {{ tenant.isCanaryTenant }}
+            <ul>
+              <li>
+                <strong>Folders ({{ tenant.folders | length }}):</strong>
+                <ul>
+                  {% for folder in tenant.folders %}
+                  <li>
+                    <strong>Folder Name:</strong> {{ folder.DisplayName }}<br />
+                    <strong>Folder Type:</strong> {{ folder.FolderType }}<br />
+                    <strong>Description:</strong> {{ folder.Description |
+                    default('N/A') }}<br />
+                    <strong>Folder Key:</strong> {{ folder.Key}}<br />
+                    <strong>Folder Id:</strong> {{ folder.Id }}<br />
+                    <!-- Add this section within the <li> for folders -->
+                    <ul>
+                      <li>
+                        <strong
+                          >Processes ({{ folder.processes | length }}):</strong
+                        >
+                        <ul>
+                          {% for process in folder.processes %}
+                          <li>
+                            <strong>Process Title:</strong> {{ process.Title
+                            }}<br />
+                            <strong>Version:</strong> {{ process.Version }}<br />
+                            <strong>IsActive:</strong> {{ process.IsActive }}<br />
+                            <strong>Main EntryPoint Path:</strong> {{
+                            process.MainEntryPointPath }}<br />
+                            <!-- Add more process details as needed -->
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li>
+                <strong>Packages ({{ tenant.packages | length }}):</strong>
+                <ul>
+                  {% for package in tenant.packages %}
+                  <li>
+                    <strong>Package Name:</strong> {{ package.Name }}<br />
+                    <strong>Version:</strong> {{ package.ProcessVersion }}<br />
+                    <strong>Key:</strong> {{ package.Key }}<br />
+                    <strong>ProcessKey:</strong> {{ package.ProcessKey }}<br />
+                    <strong>Id:</strong> {{ package.Id }}<br />
+                    <strong>ProcessType:</strong> {{ package.ProcessType }}<br />
+                    <strong>OrganizationUnitId:</strong> {{
+                    package.OrganizationUnitId }}<br />
+                    <strong>FeedId:</strong> {{ package.FeedId }}<br />
+                    <strong>EntryPointId:</strong> {{ package.EntryPointId }}<br />
+                    <strong>EntryPointPath:</strong> {{ package.EntryPointPath
+                    }}<br />
+                    <strong>Id:</strong> {{ package.Id }}
+                    <!-- InputArguments and OutputArguments -->
+                    <br /><strong>Arguments:</strong>
+                    <ul>
+                      {% if package.Arguments.Input %}
+                      <li>
+                        <strong>Input Arguments:</strong> {{
+                        package.Arguments.Input.data }}
+                      </li>
+                      {% endif %} {% if package.Arguments.Output %}
+                      <li>
+                        <strong>Output Arguments:</strong> {{
+                        package.Arguments.Output.data }}
+                      </li>
+                      {% endif %}
+                    </ul>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li>
+                <strong>Libraries ({{ tenant.libraries | length }}):</strong>
+                {% if tenant.libraries %}
+                <ul>
+                  {% for library in tenant.libraries[:20] %}
+                  <li>
+                    <strong>Library Title:</strong> {{ library.Title }}<br />
+                    <strong>Library Id:</strong> {{ library.Id }}<br />
+                    <strong>Version:</strong> {{ library.Version }}<br />
+                    <strong>Authors:</strong> {{ library.Authors }}<br />
+                    <strong>Key:</strong> {{ library.Key }}<br />
+                    <strong>ProjectType:</strong> {{ library.ProjectType }}
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </li>
+              <li>
+                <strong>Machines:</strong>
+                <ul>
+                  {% for machine in tenant.machines %}
+                  <li>
+                    <strong>Machine Name:</strong> {{ machine.Name }}<br />
+                    <strong>License Key:</strong> {{ machine.LicenseKey }}<br />
+                    <strong>Type:</strong> {{ machine.Type }}<br />
+                    <strong>Unattended Slots:</strong> {{
+                    machine.UnattendedSlots }}
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+            </ul>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+    </ul>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
