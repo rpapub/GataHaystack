@@ -1,0 +1,1210 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Gata Haystack",
+    "version": "0.0.1"
+  },
+  "paths": {
+    "/uipathcloud/tenants": {
+      "get": {
+        "tags": [
+          "tenants (alpha)",
+          "uipathcloud",
+          "inventory"
+        ],
+        "summary": "Read Tenants",
+        "operationId": "read_tenants_uipathcloud_tenants_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "tenants (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Update a tenant",
+        "operationId": "uipathcloud_tenant_update_uipathcloud_tenants_put",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "tenants (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Create a new tenant",
+        "operationId": "uipathcloud_tenant_create_uipathcloud_tenants_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "tenants (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Delete a tenant",
+        "operationId": "uipathcloud_tenant_delete_uipathcloud_tenants_delete",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/uipathcloud/tenants/{tenant_id_int}": {
+      "get": {
+        "tags": [
+          "tenants (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Retrieve a tenant",
+        "operationId": "uipathcloud_tenant_retrieve_uipathcloud_tenants__tenant_id_int__get",
+        "parameters": [
+          {
+            "name": "tenant_id_int",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Tenant Id Int"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/uipathcloud/packages": {
+      "get": {
+        "tags": [
+          "packages (alpha)",
+          "uipathcloud",
+          "inventory"
+        ],
+        "summary": "Read Packages",
+        "operationId": "read_packages_uipathcloud_packages_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "packages (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Update a package",
+        "operationId": "uipathcloud_package_update_uipathcloud_packages_put",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "packages (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Create a new package",
+        "operationId": "uipathcloud_package_create_uipathcloud_packages_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "packages (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Delete a package",
+        "operationId": "uipathcloud_package_delete_uipathcloud_packages_delete",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/uipathcloud/packages/{package_id_int}": {
+      "get": {
+        "tags": [
+          "packages (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Retrieve a package",
+        "operationId": "uipathcloud_package_retrieve_uipathcloud_packages__package_id_int__get",
+        "parameters": [
+          {
+            "name": "package_id_int",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Package Id Int"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/uipathcloud/libraries": {
+      "get": {
+        "tags": [
+          "libraries (alpha)",
+          "uipathcloud",
+          "inventory"
+        ],
+        "summary": "Read Libraries",
+        "operationId": "read_libraries_uipathcloud_libraries_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "libraries (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Update a library",
+        "operationId": "uipathcloud_library_update_uipathcloud_libraries_put",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "libraries (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Create a new library",
+        "operationId": "uipathcloud_library_create_uipathcloud_libraries_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "libraries (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Delete a library",
+        "operationId": "uipathcloud_library_delete_uipathcloud_libraries_delete",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/uipathcloud/libraries/{library_id_int}": {
+      "get": {
+        "tags": [
+          "libraries (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Retrieve a library",
+        "operationId": "uipathcloud_library_retrieve_uipathcloud_libraries__library_id_int__get",
+        "parameters": [
+          {
+            "name": "library_id_int",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Library Id Int"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/uipathcloud/machines": {
+      "get": {
+        "tags": [
+          "machines (beta)",
+          "uipathcloud",
+          "inventory"
+        ],
+        "summary": "Retrieve all machines or filter by tenant",
+        "operationId": "uipathcloud_machines_retrieve_all_uipathcloud_machines_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "machines (beta)",
+          "uipathcloud"
+        ],
+        "summary": "Update a machine",
+        "operationId": "uipathcloud_machines_update_uipathcloud_machines_put",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "machines (beta)",
+          "uipathcloud"
+        ],
+        "summary": "Create a new machine",
+        "operationId": "uipathcloud_machines_create_uipathcloud_machines_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "machines (beta)",
+          "uipathcloud"
+        ],
+        "summary": "Delete a machine",
+        "operationId": "uipathcloud_machines_delete_uipathcloud_machines_delete",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/uipathcloud/machines/{machine_id_int}": {
+      "get": {
+        "tags": [
+          "machines (beta)",
+          "uipathcloud"
+        ],
+        "summary": "Retrieve a machine",
+        "operationId": "uipathcloud_machines_retrieve_uipathcloud_machines__machine_id_int__get",
+        "parameters": [
+          {
+            "name": "machine_id_int",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Machine Id Int"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/uipathcloud/processes": {
+      "get": {
+        "tags": [
+          "processes (alpha)",
+          "uipathcloud",
+          "inventory"
+        ],
+        "summary": "Read Processes",
+        "operationId": "read_processes_uipathcloud_processes_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "processes (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Update a process",
+        "operationId": "uipathcloud_process_update_uipathcloud_processes_put",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "processes (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Create a new process",
+        "operationId": "uipathcloud_process_create_uipathcloud_processes_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "processes (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Delete a process",
+        "operationId": "uipathcloud_process_delete_uipathcloud_processes_delete",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/uipathcloud/processes/{process_id_int}": {
+      "get": {
+        "tags": [
+          "processes (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Retrieve a process",
+        "operationId": "uipathcloud_process_retrieve_uipathcloud_processes__process_id_int__get",
+        "parameters": [
+          {
+            "name": "process_id_int",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Process Id Int"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/uipathcloud/assets": {
+      "get": {
+        "tags": [
+          "assets (alpha)",
+          "uipathcloud",
+          "inventory"
+        ],
+        "summary": "Read Assets",
+        "operationId": "read_assets_uipathcloud_assets_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "assets (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Update a asset",
+        "operationId": "uipathcloud_asset_update_uipathcloud_assets_put",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "assets (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Create a new asset",
+        "operationId": "uipathcloud_asset_create_uipathcloud_assets_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "assets (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Delete a asset",
+        "operationId": "uipathcloud_asset_delete_uipathcloud_assets_delete",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/uipathcloud/assets/{asset_id_int}": {
+      "get": {
+        "tags": [
+          "assets (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Retrieve a asset",
+        "operationId": "uipathcloud_asset_retrieve_uipathcloud_assets__asset_id_int__get",
+        "parameters": [
+          {
+            "name": "asset_id_int",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Asset Id Int"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/uipathcloud/folders": {
+      "get": {
+        "tags": [
+          "folders (alpha)",
+          "uipathcloud",
+          "inventory"
+        ],
+        "summary": "Read Folders",
+        "operationId": "read_folders_uipathcloud_folders_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "folders (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Update a folder",
+        "operationId": "uipathcloud_folder_update_uipathcloud_folders_put",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "folders (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Create a new folder",
+        "operationId": "uipathcloud_folder_create_uipathcloud_folders_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "folders (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Delete a folder",
+        "operationId": "uipathcloud_folder_delete_uipathcloud_folders_delete",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/uipathcloud/folders/{folder_id_int}": {
+      "get": {
+        "tags": [
+          "folders (alpha)",
+          "uipathcloud"
+        ],
+        "summary": "Retrieve a folder",
+        "operationId": "uipathcloud_folder_retrieve_uipathcloud_folders__folder_id_int__get",
+        "parameters": [
+          {
+            "name": "folder_id_int",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Folder Id Int"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2_uipath/debug": {
+      "get": {
+        "tags": [
+          "oauth2",
+          "uipathcloud"
+        ],
+        "summary": "Debug",
+        "operationId": "debug_oauth2_uipath_debug_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/oauth2_uipath/request_access_token_with_clientid": {
+      "get": {
+        "tags": [
+          "oauth2",
+          "uipathcloud"
+        ],
+        "summary": "Oauth2 Request Access Token With Clientid",
+        "description": "Redirect to Authorization Server\n\nInitiates the OAuth 2.0 authorization flow by redirecting the client's user agent to the authorization server.\nThis step is typically used to obtain user authorization before exchanging the authorization code for an access token.\nThe redirection to the authorization server is constructed using the provided `clientid` and configurations obtained from `settings`.\n\nParameters:\n- clientid (str): Client identifier as registered with the authorization server.\n- settings (Settings): Application settings object, obtained via dependency injection, containing necessary configuration such as the authorization server URL.\n\nReturns:\n- A redirect response leading the user agent to the authorization server's consent page.",
+        "operationId": "oauth2_request_access_token_with_clientid_oauth2_uipath_request_access_token_with_clientid_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/oauth2_uipath/receive_authcode": {
+      "get": {
+        "tags": [
+          "oauth2",
+          "uipathcloud"
+        ],
+        "summary": "Oauth2 Receive Authcode",
+        "description": "OAuth 2.0 Authorization Code Receiver\n\nThis endpoint serves as the redirection URI that receives the authorization code from the authorization server.\nIt is part of the OAuth 2.0 authorization code flow. The client application must register this redirect URI with\nthe authorization server ahead of time. The authorization server may validate the URI for security purposes before\nsending the authorization code to it.\n\nUpon receiving the authorization code, the client application can proceed to exchange it for an access token at the\ntoken endpoint of the authorization server.\n\nParameters:\n- code (str): The authorization code sent by the authorization server as a response to the client's authorization request.\n\nReturns:\n- A confirmation that the code has been received, which may include further instructions on how to exchange the code for an access token.",
+        "operationId": "oauth2_receive_authcode_oauth2_uipath_receive_authcode_get",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Code"
+            }
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "State"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2_uipath/request_access_token_with_refreshtoken_foo": {
+      "get": {
+        "tags": [
+          "oauth2",
+          "uipathcloud"
+        ],
+        "summary": "Oauth2 Request Access Token With Refreshtoken Foo",
+        "description": "Request Access Token using Refresh Token Foo\n\nThis endpoint allows obtaining a new access token using a refresh token, bypassing the need for re-authentication by the resource owner. Employing a refresh token—a secure and long-lived token—facilitates the generation of new access tokens, enhancing security by limiting exposure if an access token is compromised.\n\nParameters:\n- refresh_token (str): The refresh token previously issued to the client during the access token exchange process.\n\nReturns:\n- A new access token along with its expiry time and optionally, a new refresh token.",
+        "operationId": "oauth2_request_access_token_with_refreshtoken_foo_oauth2_uipath_request_access_token_with_refreshtoken_foo_get",
+        "parameters": [
+          {
+            "name": "refresh_token",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Refresh Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/oauth2_uipath/request_openid_configuration": {
+      "get": {
+        "tags": [
+          "oauth2",
+          "uipathcloud"
+        ],
+        "summary": "Oauth2 Request Openid Configuration",
+        "description": "Request OpenID Configuration\n\nThis endpoint provides the OpenID Provider Configuration Information. It's part of the OpenID Connect\ndiscovery mechanism enabling clients to dynamically discover OpenID Connect and OAuth 2.0 endpoints.\n\nParameters:\n- None\n\nReturns:\n- The OpenID Configuration in a JSON structure.",
+        "operationId": "oauth2_request_openid_configuration_oauth2_uipath_request_openid_configuration_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/uipathcloud/loop": {
+      "get": {
+        "tags": [
+          "libraries (alpha)",
+          "uipathcloud",
+          "debug"
+        ],
+        "summary": "Read Loop",
+        "operationId": "read_loop_uipathcloud_loop_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/info": {
+      "get": {
+        "tags": [
+          "debug"
+        ],
+        "summary": "Info",
+        "operationId": "info_info_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "frontend"
+        ],
+        "summary": "Read Index",
+        "operationId": "read_index__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}
