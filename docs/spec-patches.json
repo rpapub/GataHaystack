@@ -1,0 +1,8466 @@
+[
+  {
+    "domain": "Buckets",
+    "resource": "api",
+    "action": "ListFiles",
+    "method": "GET",
+    "path_official": "api/Buckets/{id}/ListFiles",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "DirectoryService",
+    "resource": "api",
+    "action": "GetDirectoryPermissions",
+    "method": "GET",
+    "path_official": "api/DirectoryService/GetDirectoryPermissions",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "DirectoryService",
+    "resource": "api",
+    "action": "GetDomains",
+    "method": "GET",
+    "path_official": "api/DirectoryService/GetDomains",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "DirectoryService",
+    "resource": "api",
+    "action": "GetDomainUserId",
+    "method": "GET",
+    "path_official": "api/DirectoryService/GetDomainUserId",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "DirectoryService",
+    "resource": "api",
+    "action": "SearchForUsersAndGroups",
+    "method": "GET",
+    "path_official": "api/DirectoryService/SearchForUsersAndGroups",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "api",
+    "action": "DeleteByKey",
+    "method": "DELETE",
+    "path_official": "api/Folders/DeleteByKey",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "api",
+    "action": "GetAllForCurrentUser",
+    "method": "GET",
+    "path_official": "api/Folders/GetAllForCurrentUser",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "api",
+    "action": "PatchNameDescription",
+    "method": "PATCH",
+    "path_official": "api/Folders/PatchNameDescription",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "FoldersNavigation",
+    "resource": "api",
+    "action": "GetAllFoldersForCurrentUser",
+    "method": "GET",
+    "path_official": "api/FoldersNavigation/GetAllFoldersForCurrentUser",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "FoldersNavigation",
+    "resource": "api",
+    "action": "GetAllRolesForUser",
+    "method": "GET",
+    "path_official": "api/FoldersNavigation/GetAllRolesForUser",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "FoldersNavigation",
+    "resource": "api",
+    "action": "GetFolderNavigationContextForCurrentUser",
+    "method": "GET",
+    "path_official": "api/FoldersNavigation/GetFolderNavigationContextForCurrentUser",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "FoldersNavigation",
+    "resource": "api",
+    "action": "GetFoldersForCurrentUser",
+    "method": "GET",
+    "path_official": "api/FoldersNavigation/GetFoldersForCurrentUser",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "JobTriggers",
+    "resource": "api",
+    "action": "DeliverPayload",
+    "method": "POST",
+    "path_official": "api/JobTriggers/DeliverPayload/{inboxId}",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "JobTriggers",
+    "resource": "api",
+    "action": "GetPayload",
+    "method": "GET",
+    "path_official": "api/JobTriggers/GetPayload/{inboxId}",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Licensing",
+    "resource": "api",
+    "action": "Acquire",
+    "method": "POST",
+    "path_official": "api/Licensing/Acquire",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Licensing",
+    "resource": "api",
+    "action": "Release",
+    "method": "PUT",
+    "path_official": "api/Licensing/Release",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Logs",
+    "resource": "api",
+    "action": "Logs",
+    "method": "POST",
+    "path_official": "api/Logs",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Logs",
+    "resource": "api",
+    "action": "SubmitLogs",
+    "method": "POST",
+    "path_official": "api/Logs/SubmitLogs",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Maintenance",
+    "resource": "api",
+    "action": "End",
+    "method": "POST",
+    "path_official": "api/Maintenance/End",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Maintenance",
+    "resource": "api",
+    "action": "Get",
+    "method": "GET",
+    "path_official": "api/Maintenance/Get",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Maintenance",
+    "resource": "api",
+    "action": "Start",
+    "method": "POST",
+    "path_official": "api/Maintenance/Start",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "PackageFeeds",
+    "resource": "api",
+    "action": "GetFolderFeed",
+    "method": "GET",
+    "path_official": "api/PackageFeeds/GetFolderFeed",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "api",
+    "action": "DeleteByKey",
+    "method": "DELETE",
+    "path_official": "api/Releases/DeleteByKey",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Stats",
+    "resource": "api",
+    "action": "GetConsumptionLicenseStats",
+    "method": "GET",
+    "path_official": "api/Stats/GetConsumptionLicenseStats",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Stats",
+    "resource": "api",
+    "action": "GetCountStats",
+    "method": "GET",
+    "path_official": "api/Stats/GetCountStats",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Stats",
+    "resource": "api",
+    "action": "GetJobsStats",
+    "method": "GET",
+    "path_official": "api/Stats/GetJobsStats",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Stats",
+    "resource": "api",
+    "action": "GetLicenseStats",
+    "method": "GET",
+    "path_official": "api/Stats/GetLicenseStats",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Stats",
+    "resource": "api",
+    "action": "GetSessionsStats",
+    "method": "GET",
+    "path_official": "api/Stats/GetSessionsStats",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Status",
+    "resource": "api",
+    "action": "Get",
+    "method": "GET",
+    "path_official": "api/Status/Get",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Status",
+    "resource": "api",
+    "action": "VerifyHostAvailibility",
+    "method": "GET",
+    "path_official": "api/Status/VerifyHostAvailibility",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "CancelTestCaseExecution",
+    "method": "POST",
+    "path_official": "api/TestAutomation/CancelTestCaseExecution",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "CancelTestSetExecution",
+    "method": "POST",
+    "path_official": "api/TestAutomation/CancelTestSetExecution",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "CreateTestSetForReleaseVersion",
+    "method": "POST",
+    "path_official": "api/TestAutomation/CreateTestSetForReleaseVersion",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "GetAssertionScreenshot",
+    "method": "GET",
+    "path_official": "api/TestAutomation/GetAssertionScreenshot",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "GetPackageInfoByTestCaseUniqueId",
+    "method": "GET",
+    "path_official": "api/TestAutomation/GetPackageInfoByTestCaseUniqueId",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "GetReleasesForPackageVersion",
+    "method": "GET",
+    "path_official": "api/TestAutomation/GetReleasesForPackageVersion",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "GetTestCaseExecutionAttachment",
+    "method": "GET",
+    "path_official": "api/TestAutomation/GetTestCaseExecutionAttachment",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "GetTestCaseExecutionAttachments",
+    "method": "POST",
+    "path_official": "api/TestAutomation/GetTestCaseExecutionAttachments",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "GetTestSetExecutionAttachment",
+    "method": "GET",
+    "path_official": "api/TestAutomation/GetTestSetExecutionAttachment",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "GetTestSetExecutionAttachments",
+    "method": "POST",
+    "path_official": "api/TestAutomation/GetTestSetExecutionAttachments",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "ReexecuteTestCases",
+    "method": "POST",
+    "path_official": "api/TestAutomation/ReexecuteTestCases",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "StartTestSetExecution",
+    "method": "POST",
+    "path_official": "api/TestAutomation/StartTestSetExecution",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestAutomation",
+    "resource": "api",
+    "action": "StartTestSetExecutionWithOptions",
+    "method": "POST",
+    "path_official": "api/TestAutomation/StartTestSetExecutionWithOptions",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueueActions",
+    "resource": "api",
+    "action": "AddItem",
+    "method": "POST",
+    "path_official": "api/TestDataQueueActions/AddItem",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueueActions",
+    "resource": "api",
+    "action": "BulkAddItems",
+    "method": "POST",
+    "path_official": "api/TestDataQueueActions/BulkAddItems",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueueActions",
+    "resource": "api",
+    "action": "DeleteAllItems",
+    "method": "DELETE",
+    "path_official": "api/TestDataQueueActions/DeleteAllItems",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueueActions",
+    "resource": "api",
+    "action": "DeleteItems",
+    "method": "DELETE",
+    "path_official": "api/TestDataQueueActions/DeleteItems",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueueActions",
+    "resource": "api",
+    "action": "GetNextItem",
+    "method": "POST",
+    "path_official": "api/TestDataQueueActions/GetNextItem",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueueActions",
+    "resource": "api",
+    "action": "SetAllItemsConsumed",
+    "method": "POST",
+    "path_official": "api/TestDataQueueActions/SetAllItemsConsumed",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueueActions",
+    "resource": "api",
+    "action": "SetItemsConsumed",
+    "method": "POST",
+    "path_official": "api/TestDataQueueActions/SetItemsConsumed",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Translations",
+    "resource": "api",
+    "action": "GetTranslations",
+    "method": "GET",
+    "path_official": "api/Translations/GetTranslations",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskForms",
+    "resource": "forms",
+    "action": "BulkCompleteTasks",
+    "method": "POST",
+    "path_official": "forms/TaskForms/BulkCompleteTasks",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskForms",
+    "resource": "forms",
+    "action": "BulkUpdateTasks",
+    "method": "PUT",
+    "path_official": "forms/TaskForms/BulkUpdateTasks",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskForms",
+    "resource": "forms",
+    "action": "CompleteTask",
+    "method": "POST",
+    "path_official": "forms/TaskForms/CompleteTask",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskForms",
+    "resource": "forms",
+    "action": "CreateFormTask",
+    "method": "POST",
+    "path_official": "forms/TaskForms/CreateFormTask",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskForms",
+    "resource": "forms",
+    "action": "GetTaskDataById",
+    "method": "GET",
+    "path_official": "forms/TaskForms/GetTaskDataById",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskForms",
+    "resource": "forms",
+    "action": "GetTaskFormById",
+    "method": "GET",
+    "path_official": "forms/TaskForms/GetTaskFormById",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskForms",
+    "resource": "forms",
+    "action": "SaveAndReassignTask",
+    "method": "POST",
+    "path_official": "forms/TaskForms/SaveAndReassignTask",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskForms",
+    "resource": "forms",
+    "action": "SaveTaskData",
+    "method": "PUT",
+    "path_official": "forms/TaskForms/SaveTaskData",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Alerts",
+    "resource": "odata",
+    "action": "Alerts",
+    "method": "GET",
+    "path_official": "odata/Alerts",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Alerts",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetUnreadCount",
+    "method": "GET",
+    "path_official": "odata/Alerts/UiPath.Server.Configuration.OData.GetUnreadCount",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Alerts",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.MarkAsRead",
+    "method": "POST",
+    "path_official": "odata/Alerts/UiPath.Server.Configuration.OData.MarkAsRead",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Alerts",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.RaiseProcessAlert",
+    "method": "POST",
+    "path_official": "odata/Alerts/UiPath.Server.Configuration.OData.RaiseProcessAlert",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "Assets",
+    "method": "GET",
+    "path_official": "odata/Assets",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "Assets",
+    "method": "POST",
+    "path_official": "odata/Assets",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "Assets({key})",
+    "method": "GET",
+    "path_official": "odata/Assets({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "Assets({key})",
+    "method": "PUT",
+    "path_official": "odata/Assets({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "Assets({key})",
+    "method": "DELETE",
+    "path_official": "odata/Assets({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetAssetsAcrossFolders",
+    "method": "GET",
+    "path_official": "odata/Assets/UiPath.Server.Configuration.OData.GetAssetsAcrossFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetFiltered",
+    "method": "GET",
+    "path_official": "odata/Assets/UiPath.Server.Configuration.OData.GetFiltered",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetFoldersForAsset(id={id})",
+    "method": "GET",
+    "path_official": "odata/Assets/UiPath.Server.Configuration.OData.GetFoldersForAsset(id={id})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetRobotAsset(robotId='{robotId}',assetName='{assetName}')",
+    "method": "GET",
+    "path_official": "odata/Assets/UiPath.Server.Configuration.OData.GetRobotAsset(robotId='{robotId}',assetName='{assetName}')",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetRobotAssetByNameForRobotKey",
+    "method": "POST",
+    "path_official": "odata/Assets/UiPath.Server.Configuration.OData.GetRobotAssetByNameForRobotKey",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetRobotAssetByRobotId(robotId={robotId},assetName='{assetName}')",
+    "method": "GET",
+    "path_official": "odata/Assets/UiPath.Server.Configuration.OData.GetRobotAssetByRobotId(robotId={robotId},assetName='{assetName}')",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.SetRobotAssetByRobotKey",
+    "method": "POST",
+    "path_official": "odata/Assets/UiPath.Server.Configuration.OData.SetRobotAssetByRobotKey",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Assets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ShareToFolders",
+    "method": "POST",
+    "path_official": "odata/Assets/UiPath.Server.Configuration.OData.ShareToFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Attachments",
+    "resource": "odata",
+    "action": "Attachments",
+    "method": "POST",
+    "path_official": "odata/Attachments",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Attachments",
+    "resource": "odata",
+    "action": "Attachments({key})",
+    "method": "GET",
+    "path_official": "odata/Attachments({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Attachments",
+    "resource": "odata",
+    "action": "Attachments({key})",
+    "method": "DELETE",
+    "path_official": "odata/Attachments({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "AuditLogs",
+    "resource": "odata",
+    "action": "AuditLogs",
+    "method": "GET",
+    "path_official": "odata/AuditLogs",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "x-UIPATH-AuditedService",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "AuditLogs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.Export",
+    "method": "POST",
+    "path_official": "odata/AuditLogs/UiPath.Server.Configuration.OData.Export",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "AuditLogs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetAuditLogDetails(auditLogId={auditLogId})",
+    "method": "GET",
+    "path_official": "odata/AuditLogs/UiPath.Server.Configuration.OData.GetAuditLogDetails(auditLogId={auditLogId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "x-UIPATH-AuditedService",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "Buckets",
+    "method": "POST",
+    "path_official": "odata/Buckets",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "Buckets",
+    "method": "GET",
+    "path_official": "odata/Buckets",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "Buckets({key})",
+    "method": "GET",
+    "path_official": "odata/Buckets({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "Buckets({key})",
+    "method": "DELETE",
+    "path_official": "odata/Buckets({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "Buckets({key})",
+    "method": "PUT",
+    "path_official": "odata/Buckets({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.DeleteFile",
+    "method": "DELETE",
+    "path_official": "odata/Buckets({key})/UiPath.Server.Configuration.OData.DeleteFile",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetDirectories",
+    "method": "GET",
+    "path_official": "odata/Buckets({key})/UiPath.Server.Configuration.OData.GetDirectories",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetFile",
+    "method": "GET",
+    "path_official": "odata/Buckets({key})/UiPath.Server.Configuration.OData.GetFile",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetFiles",
+    "method": "GET",
+    "path_official": "odata/Buckets({key})/UiPath.Server.Configuration.OData.GetFiles",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetReadUri",
+    "method": "GET",
+    "path_official": "odata/Buckets({key})/UiPath.Server.Configuration.OData.GetReadUri",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetWriteUri",
+    "method": "GET",
+    "path_official": "odata/Buckets({key})/UiPath.Server.Configuration.OData.GetWriteUri",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetBucketsAcrossFolders",
+    "method": "GET",
+    "path_official": "odata/Buckets/UiPath.Server.Configuration.OData.GetBucketsAcrossFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetFoldersForBucket(id={id})",
+    "method": "GET",
+    "path_official": "odata/Buckets/UiPath.Server.Configuration.OData.GetFoldersForBucket(id={id})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Buckets",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ShareToFolders",
+    "method": "POST",
+    "path_official": "odata/Buckets/UiPath.Server.Configuration.OData.ShareToFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "BusinessRules",
+    "resource": "odata",
+    "action": "BusinessRules",
+    "method": "GET",
+    "path_official": "odata/BusinessRules",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "BusinessRules",
+    "resource": "odata",
+    "action": "BusinessRules",
+    "method": "POST",
+    "path_official": "odata/BusinessRules",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "BusinessRules",
+    "resource": "odata",
+    "action": "BusinessRules({key})",
+    "method": "GET",
+    "path_official": "odata/BusinessRules({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "BusinessRules",
+    "resource": "odata",
+    "action": "BusinessRules({key})",
+    "method": "PUT",
+    "path_official": "odata/BusinessRules({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "BusinessRules",
+    "resource": "odata",
+    "action": "BusinessRules({key})",
+    "method": "DELETE",
+    "path_official": "odata/BusinessRules({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "BusinessRules",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetBusinessRulesAcrossFolders",
+    "method": "GET",
+    "path_official": "odata/BusinessRules/UiPath.Server.Configuration.OData.GetBusinessRulesAcrossFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "BusinessRules",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetFoldersForBusinessRule(id={id})",
+    "method": "GET",
+    "path_official": "odata/BusinessRules/UiPath.Server.Configuration.OData.GetFoldersForBusinessRule(id={id})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "BusinessRules",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetReadUri(name='{name}')",
+    "method": "GET",
+    "path_official": "odata/BusinessRules/UiPath.Server.Configuration.OData.GetReadUri(name='{name}')",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "BusinessRules",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetVersionList(id={id})",
+    "method": "GET",
+    "path_official": "odata/BusinessRules/UiPath.Server.Configuration.OData.GetVersionList(id={id})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "BusinessRules",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ShareToFolders",
+    "method": "POST",
+    "path_official": "odata/BusinessRules/UiPath.Server.Configuration.OData.ShareToFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Calendars",
+    "resource": "odata",
+    "action": "Calendars",
+    "method": "GET",
+    "path_official": "odata/Calendars",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Calendars",
+    "resource": "odata",
+    "action": "Calendars",
+    "method": "POST",
+    "path_official": "odata/Calendars",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Calendars",
+    "resource": "odata",
+    "action": "Calendars({key})",
+    "method": "GET",
+    "path_official": "odata/Calendars({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Calendars",
+    "resource": "odata",
+    "action": "Calendars({key})",
+    "method": "PUT",
+    "path_official": "odata/Calendars({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Calendars",
+    "resource": "odata",
+    "action": "Calendars({key})",
+    "method": "DELETE",
+    "path_official": "odata/Calendars({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Calendars",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.CalendarExists",
+    "method": "POST",
+    "path_official": "odata/Calendars/UiPath.Server.Configuration.OData.CalendarExists",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "CredentialStores",
+    "resource": "odata",
+    "action": "CredentialStores",
+    "method": "GET",
+    "path_official": "odata/CredentialStores",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "CredentialStores",
+    "resource": "odata",
+    "action": "CredentialStores",
+    "method": "POST",
+    "path_official": "odata/CredentialStores",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "CredentialStores",
+    "resource": "odata",
+    "action": "CredentialStores({key})",
+    "method": "GET",
+    "path_official": "odata/CredentialStores({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "CredentialStores",
+    "resource": "odata",
+    "action": "CredentialStores({key})",
+    "method": "PUT",
+    "path_official": "odata/CredentialStores({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "CredentialStores",
+    "resource": "odata",
+    "action": "CredentialStores({key})",
+    "method": "DELETE",
+    "path_official": "odata/CredentialStores({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "CredentialStores",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.SetDefaultStoreForResourceType",
+    "method": "POST",
+    "path_official": "odata/CredentialStores({key})/UiPath.Server.Configuration.OData.SetDefaultStoreForResourceType",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "CredentialStores",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetAvailableCredentialStoreTypes",
+    "method": "GET",
+    "path_official": "odata/CredentialStores/UiPath.Server.Configuration.OData.GetAvailableCredentialStoreTypes",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "CredentialStores",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetDefaultStoreForResourceType(resourceType='{resourceType}')",
+    "method": "GET",
+    "path_official": "odata/CredentialStores/UiPath.Server.Configuration.OData.GetDefaultStoreForResourceType(resourceType='{resourceType}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "CredentialStores",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetResourcesForCredentialsProxyResourceTypes(key={key},resourceType='{resourceType}')",
+    "method": "GET",
+    "path_official": "odata/CredentialStores/UiPath.Server.Configuration.OData.GetResourcesForCredentialsProxyResourceTypes(key={key},resourceType='{resourceType}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "CredentialStores",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetResourcesForCredentialStoreTypes(key={key},resourceType='{resourceType}')",
+    "method": "GET",
+    "path_official": "odata/CredentialStores/UiPath.Server.Configuration.OData.GetResourcesForCredentialStoreTypes(key={key},resourceType='{resourceType}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ExecutionMedia",
+    "resource": "odata",
+    "action": "ExecutionMedia",
+    "method": "GET",
+    "path_official": "odata/ExecutionMedia",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ExecutionMedia",
+    "resource": "odata",
+    "action": "ExecutionMedia({key})",
+    "method": "GET",
+    "path_official": "odata/ExecutionMedia({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ExecutionMedia",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.DeleteMediaByJobId",
+    "method": "POST",
+    "path_official": "odata/ExecutionMedia/UiPath.Server.Configuration.OData.DeleteMediaByJobId",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ExecutionMedia",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.DownloadMediaByJobId(jobId={jobId})",
+    "method": "GET",
+    "path_official": "odata/ExecutionMedia/UiPath.Server.Configuration.OData.DownloadMediaByJobId(jobId={jobId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Exports",
+    "resource": "odata",
+    "action": "Exports({key})",
+    "method": "GET",
+    "path_official": "odata/Exports({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Exports",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetDownloadLink",
+    "method": "GET",
+    "path_official": "odata/Exports({key})/UiPath.Server.Configuration.OData.GetDownloadLink",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "Folders",
+    "method": "GET",
+    "path_official": "odata/Folders",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "Folders",
+    "method": "POST",
+    "path_official": "odata/Folders",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.MoveFolder",
+    "method": "PUT",
+    "path_official": "odata/Folders({folderId})/UiPath.Server.Configuration.OData.MoveFolder",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "Folders({key})",
+    "method": "GET",
+    "path_official": "odata/Folders({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "Folders({key})",
+    "method": "PUT",
+    "path_official": "odata/Folders({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "Folders({key})",
+    "method": "DELETE",
+    "path_official": "odata/Folders({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.RemoveMachinesFromFolder",
+    "method": "POST",
+    "path_official": "odata/Folders({key})/UiPath.Server.Configuration.OData.RemoveMachinesFromFolder",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.RemoveUserFromFolder",
+    "method": "POST",
+    "path_official": "odata/Folders({key})/UiPath.Server.Configuration.OData.RemoveUserFromFolder",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.RemoveUserFromFolderByKey",
+    "method": "POST",
+    "path_official": "odata/Folders({key})/UiPath.Server.Configuration.OData.RemoveUserFromFolderByKey",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.AssignDomainUser",
+    "method": "POST",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.AssignDomainUser",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.AssignMachines",
+    "method": "POST",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.AssignMachines",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.AssignUsers",
+    "method": "POST",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.AssignUsers",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetAllRolesForUser(username='{username}',skip={skip},take={take})",
+    "method": "GET",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.GetAllRolesForUser(username='{username}',skip={skip},take={take})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetByKey(identifier={identifier})",
+    "method": "GET",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.GetByKey(identifier={identifier})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetMachinesForFolder(key={key})",
+    "method": "GET",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.GetMachinesForFolder(key={key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetMoveFolderMachinesChanges",
+    "method": "GET",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.GetMoveFolderMachinesChanges",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetSubfoldersWithAssignedMachine",
+    "method": "GET",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.GetSubfoldersWithAssignedMachine",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetUsersForFolder(key={key},includeInherited={includeInherited})",
+    "method": "GET",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.GetUsersForFolder(key={key},includeInherited={includeInherited})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ToggleFolderMachineInherit",
+    "method": "POST",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.ToggleFolderMachineInherit",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Folders",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateMachinesToFolderAssociations",
+    "method": "POST",
+    "path_official": "odata/Folders/UiPath.Server.Configuration.OData.UpdateMachinesToFolderAssociations",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Jobs",
+    "resource": "odata",
+    "action": "Jobs",
+    "method": "GET",
+    "path_official": "odata/Jobs",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Jobs",
+    "resource": "odata",
+    "action": "Jobs({key})",
+    "method": "GET",
+    "path_official": "odata/Jobs({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Jobs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.StopJob",
+    "method": "POST",
+    "path_official": "odata/Jobs({key})/UiPath.Server.Configuration.OData.StopJob",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Jobs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ValidateExistingJob",
+    "method": "POST",
+    "path_official": "odata/Jobs({key})/UiPath.Server.Configuration.OData.ValidateExistingJob",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Jobs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.Export",
+    "method": "POST",
+    "path_official": "odata/Jobs/UiPath.Server.Configuration.OData.Export",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Jobs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.RestartJob",
+    "method": "POST",
+    "path_official": "odata/Jobs/UiPath.Server.Configuration.OData.RestartJob",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Jobs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ResumeJob",
+    "method": "POST",
+    "path_official": "odata/Jobs/UiPath.Server.Configuration.OData.ResumeJob",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Jobs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.StartJobs",
+    "method": "POST",
+    "path_official": "odata/Jobs/UiPath.Server.Configuration.OData.StartJobs",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Jobs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.StopJobs",
+    "method": "POST",
+    "path_official": "odata/Jobs/UiPath.Server.Configuration.OData.StopJobs",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Jobs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ValidateDynamicJob",
+    "method": "POST",
+    "path_official": "odata/Jobs/UiPath.Server.Configuration.OData.ValidateDynamicJob",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "JobTriggers",
+    "resource": "odata",
+    "action": "JobTriggers",
+    "method": "GET",
+    "path_official": "odata/JobTriggers",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "JobTriggers",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetByJobKey(jobKey={jobKey})",
+    "method": "GET",
+    "path_official": "odata/JobTriggers/UiPath.Server.Configuration.OData.GetByJobKey(jobKey={jobKey})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "JobTriggers",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetWithWaitEvents(jobId={jobId})",
+    "method": "GET",
+    "path_official": "odata/JobTriggers/UiPath.Server.Configuration.OData.GetWithWaitEvents(jobId={jobId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Libraries",
+    "resource": "odata",
+    "action": "Libraries",
+    "method": "GET",
+    "path_official": "odata/Libraries",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Libraries",
+    "resource": "odata",
+    "action": "Libraries('{key}')",
+    "method": "DELETE",
+    "path_official": "odata/Libraries('{key}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Libraries",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.DownloadPackage(key='{key}')",
+    "method": "GET",
+    "path_official": "odata/Libraries/UiPath.Server.Configuration.OData.DownloadPackage(key='{key}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Libraries",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetVersions(packageId='{packageId}')",
+    "method": "GET",
+    "path_official": "odata/Libraries/UiPath.Server.Configuration.OData.GetVersions(packageId='{packageId}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Libraries",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UploadPackage",
+    "method": "POST",
+    "path_official": "odata/Libraries/UiPath.Server.Configuration.OData.UploadPackage",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "LicensesNamedUser",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetLicensesNamedUser(robotType='{robotType}')",
+    "method": "GET",
+    "path_official": "odata/LicensesNamedUser/UiPath.Server.Configuration.OData.GetLicensesNamedUser(robotType='{robotType}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "LicensesRuntime",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ToggleEnabled",
+    "method": "POST",
+    "path_official": "odata/LicensesRuntime('{key}')/UiPath.Server.Configuration.OData.ToggleEnabled",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "LicensesRuntime",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetLicensesRuntime(robotType='{robotType}')",
+    "method": "GET",
+    "path_official": "odata/LicensesRuntime/UiPath.Server.Configuration.OData.GetLicensesRuntime(robotType='{robotType}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Machines",
+    "resource": "odata",
+    "action": "Machines",
+    "method": "GET",
+    "path_official": "odata/Machines",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Machines",
+    "resource": "odata",
+    "action": "Machines",
+    "method": "POST",
+    "path_official": "odata/Machines",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Machines",
+    "resource": "odata",
+    "action": "Machines({key})",
+    "method": "GET",
+    "path_official": "odata/Machines({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Machines",
+    "resource": "odata",
+    "action": "Machines({key})",
+    "method": "PUT",
+    "path_official": "odata/Machines({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Machines",
+    "resource": "odata",
+    "action": "Machines({key})",
+    "method": "PATCH",
+    "path_official": "odata/Machines({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Machines",
+    "resource": "odata",
+    "action": "Machines({key})",
+    "method": "DELETE",
+    "path_official": "odata/Machines({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Machines",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.DeleteBulk",
+    "method": "POST",
+    "path_official": "odata/Machines/UiPath.Server.Configuration.OData.DeleteBulk",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Machines",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetAssignedMachines(folderId={folderId})",
+    "method": "GET",
+    "path_official": "odata/Machines/UiPath.Server.Configuration.OData.GetAssignedMachines(folderId={folderId})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Machines",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetRuntimesForFolder(folderId={folderId})",
+    "method": "GET",
+    "path_official": "odata/Machines/UiPath.Server.Configuration.OData.GetRuntimesForFolder(folderId={folderId})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Permissions",
+    "resource": "odata",
+    "action": "Permissions",
+    "method": "GET",
+    "path_official": "odata/Permissions",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "PersonalWorkspaces",
+    "resource": "odata",
+    "action": "PersonalWorkspaces",
+    "method": "GET",
+    "path_official": "odata/PersonalWorkspaces",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "PersonalWorkspaces",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ConvertToFolder",
+    "method": "POST",
+    "path_official": "odata/PersonalWorkspaces({key})/UiPath.Server.Configuration.OData.ConvertToFolder",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "PersonalWorkspaces",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.StartExploring",
+    "method": "POST",
+    "path_official": "odata/PersonalWorkspaces({key})/UiPath.Server.Configuration.OData.StartExploring",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "PersonalWorkspaces",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.StopExploring",
+    "method": "POST",
+    "path_official": "odata/PersonalWorkspaces({key})/UiPath.Server.Configuration.OData.StopExploring",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "PersonalWorkspaces",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetPersonalWorkspace",
+    "method": "GET",
+    "path_official": "odata/PersonalWorkspaces/UiPath.Server.Configuration.OData.GetPersonalWorkspace",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Processes",
+    "resource": "odata",
+    "action": "Processes",
+    "method": "GET",
+    "path_official": "odata/Processes",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Processes",
+    "resource": "odata",
+    "action": "Processes('{key}')",
+    "method": "DELETE",
+    "path_official": "odata/Processes('{key}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Processes",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.DownloadPackage(key='{key}')",
+    "method": "GET",
+    "path_official": "odata/Processes/UiPath.Server.Configuration.OData.DownloadPackage(key='{key}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Processes",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetArguments(key='{key}')",
+    "method": "GET",
+    "path_official": "odata/Processes/UiPath.Server.Configuration.OData.GetArguments(key='{key}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Processes",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetProcessVersions(processId='{processId}')",
+    "method": "GET",
+    "path_official": "odata/Processes/UiPath.Server.Configuration.OData.GetProcessVersions(processId='{processId}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Processes",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UploadPackage",
+    "method": "POST",
+    "path_official": "odata/Processes/UiPath.Server.Configuration.OData.UploadPackage",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ProcessSchedules",
+    "resource": "odata",
+    "action": "ProcessSchedules",
+    "method": "GET",
+    "path_official": "odata/ProcessSchedules",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ProcessSchedules",
+    "resource": "odata",
+    "action": "ProcessSchedules",
+    "method": "POST",
+    "path_official": "odata/ProcessSchedules",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ProcessSchedules",
+    "resource": "odata",
+    "action": "ProcessSchedules({key})",
+    "method": "GET",
+    "path_official": "odata/ProcessSchedules({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ProcessSchedules",
+    "resource": "odata",
+    "action": "ProcessSchedules({key})",
+    "method": "PUT",
+    "path_official": "odata/ProcessSchedules({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ProcessSchedules",
+    "resource": "odata",
+    "action": "ProcessSchedules({key})",
+    "method": "DELETE",
+    "path_official": "odata/ProcessSchedules({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ProcessSchedules",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.Activate",
+    "method": "POST",
+    "path_official": "odata/ProcessSchedules({key})/UiPath.Server.Configuration.OData.Activate",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ProcessSchedules",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetRobotIdsForSchedule(key={key})",
+    "method": "GET",
+    "path_official": "odata/ProcessSchedules/UiPath.Server.Configuration.OData.GetRobotIdsForSchedule(key={key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ProcessSchedules",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.SetEnabled",
+    "method": "POST",
+    "path_official": "odata/ProcessSchedules/UiPath.Server.Configuration.OData.SetEnabled",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ProcessSchedules",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ValidateProcessSchedule",
+    "method": "POST",
+    "path_official": "odata/ProcessSchedules/UiPath.Server.Configuration.OData.ValidateProcessSchedule",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "QueueDefinitions",
+    "method": "GET",
+    "path_official": "odata/QueueDefinitions",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "QueueDefinitions",
+    "method": "POST",
+    "path_official": "odata/QueueDefinitions",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "QueueDefinitions({key})",
+    "method": "GET",
+    "path_official": "odata/QueueDefinitions({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "QueueDefinitions({key})",
+    "method": "PUT",
+    "path_official": "odata/QueueDefinitions({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "QueueDefinitions({key})",
+    "method": "DELETE",
+    "path_official": "odata/QueueDefinitions({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "UiPathODataSvc.Export",
+    "method": "POST",
+    "path_official": "odata/QueueDefinitions({key})/UiPathODataSvc.Export",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "UiPathODataSvc.GetJsonSchemaDefinition(jsonSchemaType='{jsonSchemaType}')",
+    "method": "GET",
+    "path_official": "odata/QueueDefinitions({key})/UiPathODataSvc.GetJsonSchemaDefinition(jsonSchemaType='{jsonSchemaType}')",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetByKey(identifier={identifier})",
+    "method": "GET",
+    "path_official": "odata/QueueDefinitions/UiPath.Server.Configuration.OData.GetByKey(identifier={identifier})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetFoldersForQueue(id={id})",
+    "method": "GET",
+    "path_official": "odata/QueueDefinitions/UiPath.Server.Configuration.OData.GetFoldersForQueue(id={id})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetQueuesAcrossFolders",
+    "method": "GET",
+    "path_official": "odata/QueueDefinitions/UiPath.Server.Configuration.OData.GetQueuesAcrossFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueDefinitions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ShareToFolders",
+    "method": "POST",
+    "path_official": "odata/QueueDefinitions/UiPath.Server.Configuration.OData.ShareToFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItemComments",
+    "resource": "odata",
+    "action": "QueueItemComments",
+    "method": "GET",
+    "path_official": "odata/QueueItemComments",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItemComments",
+    "resource": "odata",
+    "action": "QueueItemComments",
+    "method": "POST",
+    "path_official": "odata/QueueItemComments",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItemComments",
+    "resource": "odata",
+    "action": "QueueItemComments({key})",
+    "method": "GET",
+    "path_official": "odata/QueueItemComments({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItemComments",
+    "resource": "odata",
+    "action": "QueueItemComments({key})",
+    "method": "PUT",
+    "path_official": "odata/QueueItemComments({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItemComments",
+    "resource": "odata",
+    "action": "QueueItemComments({key})",
+    "method": "DELETE",
+    "path_official": "odata/QueueItemComments({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItemComments",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetQueueItemCommentsHistory(queueItemId={queueItemId})",
+    "method": "GET",
+    "path_official": "odata/QueueItemComments/UiPath.Server.Configuration.OData.GetQueueItemCommentsHistory(queueItemId={queueItemId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItemEvents",
+    "resource": "odata",
+    "action": "QueueItemEvents",
+    "method": "GET",
+    "path_official": "odata/QueueItemEvents",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItemEvents",
+    "resource": "odata",
+    "action": "QueueItemEvents({key})",
+    "method": "GET",
+    "path_official": "odata/QueueItemEvents({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItemEvents",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetQueueItemEventsHistory(queueItemId={queueItemId})",
+    "method": "GET",
+    "path_official": "odata/QueueItemEvents/UiPath.Server.Configuration.OData.GetQueueItemEventsHistory(queueItemId={queueItemId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "QueueItems",
+    "method": "GET",
+    "path_official": "odata/QueueItems",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "QueueItems({key})",
+    "method": "GET",
+    "path_official": "odata/QueueItems({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "QueueItems({key})",
+    "method": "DELETE",
+    "path_official": "odata/QueueItems({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "QueueItems({key})",
+    "method": "PUT",
+    "path_official": "odata/QueueItems({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetItemLastRetry",
+    "method": "GET",
+    "path_official": "odata/QueueItems({key})/UiPath.Server.Configuration.OData.GetItemLastRetry",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "UiPathODataSvc.GetItemProcessingHistory",
+    "method": "GET",
+    "path_official": "odata/QueueItems({key})/UiPathODataSvc.GetItemProcessingHistory",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "UiPathODataSvc.SetTransactionProgress",
+    "method": "POST",
+    "path_official": "odata/QueueItems({key})/UiPathODataSvc.SetTransactionProgress",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetReviewers",
+    "method": "GET",
+    "path_official": "odata/QueueItems/UiPath.Server.Configuration.OData.GetReviewers",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "UiPathODataSvc.DeleteBulk",
+    "method": "POST",
+    "path_official": "odata/QueueItems/UiPathODataSvc.DeleteBulk",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "UiPathODataSvc.GetItemLastRetryByKey(key={key})",
+    "method": "GET",
+    "path_official": "odata/QueueItems/UiPathODataSvc.GetItemLastRetryByKey(key={key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "UiPathODataSvc.SetItemReviewer",
+    "method": "POST",
+    "path_official": "odata/QueueItems/UiPathODataSvc.SetItemReviewer",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "UiPathODataSvc.SetItemReviewStatus",
+    "method": "POST",
+    "path_official": "odata/QueueItems/UiPathODataSvc.SetItemReviewStatus",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueItems",
+    "resource": "odata",
+    "action": "UiPathODataSvc.UnsetItemReviewer",
+    "method": "POST",
+    "path_official": "odata/QueueItems/UiPathODataSvc.UnsetItemReviewer",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueProcessingRecords",
+    "resource": "odata",
+    "action": "UiPathODataSvc.RetrieveLastDaysProcessingRecords(daysNo={daysNo},queueDefinitionId={queueDefinitionId})",
+    "method": "GET",
+    "path_official": "odata/QueueProcessingRecords/UiPathODataSvc.RetrieveLastDaysProcessingRecords(daysNo={daysNo},queueDefinitionId={queueDefinitionId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueProcessingRecords",
+    "resource": "odata",
+    "action": "UiPathODataSvc.RetrieveQueuesProcessingStatus",
+    "method": "GET",
+    "path_official": "odata/QueueProcessingRecords/UiPathODataSvc.RetrieveQueuesProcessingStatus",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueRetention",
+    "resource": "odata",
+    "action": "QueueRetention",
+    "method": "GET",
+    "path_official": "odata/QueueRetention",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueRetention",
+    "resource": "odata",
+    "action": "QueueRetention({key})",
+    "method": "GET",
+    "path_official": "odata/QueueRetention({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueRetention",
+    "resource": "odata",
+    "action": "QueueRetention({key})",
+    "method": "PUT",
+    "path_official": "odata/QueueRetention({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "QueueRetention",
+    "resource": "odata",
+    "action": "QueueRetention({key})",
+    "method": "DELETE",
+    "path_official": "odata/QueueRetention({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Queues",
+    "resource": "odata",
+    "action": "UiPathODataSvc.SetTransactionResult",
+    "method": "POST",
+    "path_official": "odata/Queues({key})/UiPathODataSvc.SetTransactionResult",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Queues",
+    "resource": "odata",
+    "action": "UiPathODataSvc.AddQueueItem",
+    "method": "POST",
+    "path_official": "odata/Queues/UiPathODataSvc.AddQueueItem",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Queues",
+    "resource": "odata",
+    "action": "UiPathODataSvc.BulkAddQueueItems",
+    "method": "POST",
+    "path_official": "odata/Queues/UiPathODataSvc.BulkAddQueueItems",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Queues",
+    "resource": "odata",
+    "action": "UiPathODataSvc.StartTransaction",
+    "method": "POST",
+    "path_official": "odata/Queues/UiPathODataSvc.StartTransaction",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ReleaseRetention",
+    "resource": "odata",
+    "action": "ReleaseRetention",
+    "method": "GET",
+    "path_official": "odata/ReleaseRetention",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ReleaseRetention",
+    "resource": "odata",
+    "action": "ReleaseRetention({key})",
+    "method": "GET",
+    "path_official": "odata/ReleaseRetention({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ReleaseRetention",
+    "resource": "odata",
+    "action": "ReleaseRetention({key})",
+    "method": "PUT",
+    "path_official": "odata/ReleaseRetention({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "ReleaseRetention",
+    "resource": "odata",
+    "action": "ReleaseRetention({key})",
+    "method": "DELETE",
+    "path_official": "odata/ReleaseRetention({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "Releases",
+    "method": "GET",
+    "path_official": "odata/Releases",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "Releases",
+    "method": "POST",
+    "path_official": "odata/Releases",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "Releases({key})",
+    "method": "GET",
+    "path_official": "odata/Releases({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "Releases({key})",
+    "method": "PATCH",
+    "path_official": "odata/Releases({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "Releases({key})",
+    "method": "PUT",
+    "path_official": "odata/Releases({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "Releases({key})",
+    "method": "DELETE",
+    "path_official": "odata/Releases({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.RollbackToPreviousReleaseVersion",
+    "method": "POST",
+    "path_official": "odata/Releases({key})/UiPath.Server.Configuration.OData.RollbackToPreviousReleaseVersion",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateToLatestPackageVersion",
+    "method": "POST",
+    "path_official": "odata/Releases({key})/UiPath.Server.Configuration.OData.UpdateToLatestPackageVersion",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateToSpecificPackageVersion",
+    "method": "POST",
+    "path_official": "odata/Releases({key})/UiPath.Server.Configuration.OData.UpdateToSpecificPackageVersion",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.RollbackToPreviousReleaseVersionByKey(identifier={identifier})",
+    "method": "POST",
+    "path_official": "odata/Releases/UiPath.Server.Configuration.OData.RollbackToPreviousReleaseVersionByKey(identifier={identifier})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateByKey",
+    "method": "POST",
+    "path_official": "odata/Releases/UiPath.Server.Configuration.OData.UpdateByKey",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateToLatestPackageVersionBulk",
+    "method": "POST",
+    "path_official": "odata/Releases/UiPath.Server.Configuration.OData.UpdateToLatestPackageVersionBulk",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateToLatestPackageVersionBulkByKey",
+    "method": "POST",
+    "path_official": "odata/Releases/UiPath.Server.Configuration.OData.UpdateToLatestPackageVersionBulkByKey",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateToLatestPackageVersionByKey(identifier={identifier})",
+    "method": "POST",
+    "path_official": "odata/Releases/UiPath.Server.Configuration.OData.UpdateToLatestPackageVersionByKey(identifier={identifier})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Releases",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateToSpecificPackageVersionByKey(identifier={identifier})",
+    "method": "POST",
+    "path_official": "odata/Releases/UiPath.Server.Configuration.OData.UpdateToSpecificPackageVersionByKey(identifier={identifier})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "RobotLogs",
+    "resource": "odata",
+    "action": "RobotLogs",
+    "method": "GET",
+    "path_official": "odata/RobotLogs",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "RobotLogs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.Export",
+    "method": "POST",
+    "path_official": "odata/RobotLogs/UiPath.Server.Configuration.OData.Export",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "RobotLogs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetTotalCount",
+    "method": "GET",
+    "path_official": "odata/RobotLogs/UiPath.Server.Configuration.OData.GetTotalCount",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "Robots",
+    "method": "GET",
+    "path_official": "odata/Robots",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "Robots",
+    "method": "POST",
+    "path_official": "odata/Robots",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "Robots({key})",
+    "method": "GET",
+    "path_official": "odata/Robots({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "Robots({key})",
+    "method": "PUT",
+    "path_official": "odata/Robots({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "Robots({key})",
+    "method": "PATCH",
+    "path_official": "odata/Robots({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "Robots({key})",
+    "method": "DELETE",
+    "path_official": "odata/Robots({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ConvertToFloating",
+    "method": "POST",
+    "path_official": "odata/Robots/UiPath.Server.Configuration.OData.ConvertToFloating",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.DeleteBulk",
+    "method": "POST",
+    "path_official": "odata/Robots/UiPath.Server.Configuration.OData.DeleteBulk",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.FindAllAcrossFolders",
+    "method": "GET",
+    "path_official": "odata/Robots/UiPath.Server.Configuration.OData.FindAllAcrossFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetConfiguredRobots",
+    "method": "GET",
+    "path_official": "odata/Robots/UiPath.Server.Configuration.OData.GetConfiguredRobots",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetFolderRobots(folderId={folderId},machineId={machineId})",
+    "method": "GET",
+    "path_official": "odata/Robots/UiPath.Server.Configuration.OData.GetFolderRobots(folderId={folderId},machineId={machineId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetMachineNameToLicenseKeyMappings",
+    "method": "GET",
+    "path_official": "odata/Robots/UiPath.Server.Configuration.OData.GetMachineNameToLicenseKeyMappings",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetRobotsForProcess(processId='{processId}')",
+    "method": "GET",
+    "path_official": "odata/Robots/UiPath.Server.Configuration.OData.GetRobotsForProcess(processId='{processId}')",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetRobotsFromFolder(folderId={folderId})",
+    "method": "GET",
+    "path_official": "odata/Robots/UiPath.Server.Configuration.OData.GetRobotsFromFolder(folderId={folderId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetUsernames",
+    "method": "GET",
+    "path_official": "odata/Robots/UiPath.Server.Configuration.OData.GetUsernames",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Robots",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ToggleEnabledStatus",
+    "method": "POST",
+    "path_official": "odata/Robots/UiPath.Server.Configuration.OData.ToggleEnabledStatus",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Roles",
+    "resource": "odata",
+    "action": "Roles",
+    "method": "GET",
+    "path_official": "odata/Roles",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Roles",
+    "resource": "odata",
+    "action": "Roles",
+    "method": "POST",
+    "path_official": "odata/Roles",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Roles",
+    "resource": "odata",
+    "action": "Roles({key})",
+    "method": "GET",
+    "path_official": "odata/Roles({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Roles",
+    "resource": "odata",
+    "action": "Roles({key})",
+    "method": "PUT",
+    "path_official": "odata/Roles({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Roles",
+    "resource": "odata",
+    "action": "Roles({key})",
+    "method": "DELETE",
+    "path_official": "odata/Roles({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Roles",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.SetUsers",
+    "method": "POST",
+    "path_official": "odata/Roles({key})/UiPath.Server.Configuration.OData.SetUsers",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Roles",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetUserIdsForRole(key={key})",
+    "method": "GET",
+    "path_official": "odata/Roles/UiPath.Server.Configuration.OData.GetUserIdsForRole(key={key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Roles",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetUsersForRole(key={key})",
+    "method": "GET",
+    "path_official": "odata/Roles/UiPath.Server.Configuration.OData.GetUsersForRole(key={key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Sessions",
+    "resource": "odata",
+    "action": "Sessions",
+    "method": "GET",
+    "path_official": "odata/Sessions",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Sessions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ToggleMachineSessionDebugMode",
+    "method": "POST",
+    "path_official": "odata/Sessions({key})/UiPath.Server.Configuration.OData.ToggleMachineSessionDebugMode",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Sessions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.DeleteInactiveUnattendedSessions",
+    "method": "POST",
+    "path_official": "odata/Sessions/UiPath.Server.Configuration.OData.DeleteInactiveUnattendedSessions",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Sessions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetGlobalSessions",
+    "method": "GET",
+    "path_official": "odata/Sessions/UiPath.Server.Configuration.OData.GetGlobalSessions",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Sessions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetMachineSessionRuntimes",
+    "method": "GET",
+    "path_official": "odata/Sessions/UiPath.Server.Configuration.OData.GetMachineSessionRuntimes",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Sessions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetMachineSessionRuntimesByFolderId(folderId={folderId})",
+    "method": "GET",
+    "path_official": "odata/Sessions/UiPath.Server.Configuration.OData.GetMachineSessionRuntimesByFolderId(folderId={folderId})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Sessions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetMachineSessions(key={key})",
+    "method": "GET",
+    "path_official": "odata/Sessions/UiPath.Server.Configuration.OData.GetMachineSessions(key={key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Sessions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetUsernames",
+    "method": "GET",
+    "path_official": "odata/Sessions/UiPath.Server.Configuration.OData.GetUsernames",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Sessions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.SetMaintenanceMode",
+    "method": "POST",
+    "path_official": "odata/Sessions/UiPath.Server.Configuration.OData.SetMaintenanceMode",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "Settings",
+    "method": "GET",
+    "path_official": "odata/Settings",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "Settings('{key}')",
+    "method": "GET",
+    "path_official": "odata/Settings('{key}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "Settings('{key}')",
+    "method": "PUT",
+    "path_official": "odata/Settings('{key}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.DeleteBulk",
+    "method": "POST",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.DeleteBulk",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetActivitySettings",
+    "method": "GET",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.GetActivitySettings",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetAuthenticationSettings",
+    "method": "GET",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.GetAuthenticationSettings",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetCalendar",
+    "method": "GET",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.GetCalendar",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetExecutionSettingsConfiguration(scope={scope})",
+    "method": "GET",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.GetExecutionSettingsConfiguration(scope={scope})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetLanguages",
+    "method": "GET",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.GetLanguages",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetLicense",
+    "method": "GET",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.GetLicense",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetSecureStoreConfiguration(storeTypeName='{storeTypeName}')",
+    "method": "GET",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.GetSecureStoreConfiguration(storeTypeName='{storeTypeName}')",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetTimezones",
+    "method": "GET",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.GetTimezones",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetUpdateSettings",
+    "method": "GET",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.GetUpdateSettings",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetWebSettings",
+    "method": "GET",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.GetWebSettings",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.SetCalendar",
+    "method": "POST",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.SetCalendar",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateBulk",
+    "method": "POST",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.UpdateBulk",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateUserSetting",
+    "method": "POST",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.UpdateUserSetting",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Settings",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.VerifySmtpSetting",
+    "method": "POST",
+    "path_official": "odata/Settings/UiPath.Server.Configuration.OData.VerifySmtpSetting",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskActivities",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetByTaskId(taskId={taskId})",
+    "method": "GET",
+    "path_official": "odata/TaskActivities/UiPath.Server.Configuration.OData.GetByTaskId(taskId={taskId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskCatalogs",
+    "resource": "odata",
+    "action": "TaskCatalogs",
+    "method": "GET",
+    "path_official": "odata/TaskCatalogs",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskCatalogs",
+    "resource": "odata",
+    "action": "TaskCatalogs({key})",
+    "method": "GET",
+    "path_official": "odata/TaskCatalogs({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskCatalogs",
+    "resource": "odata",
+    "action": "TaskCatalogs({key})",
+    "method": "DELETE",
+    "path_official": "odata/TaskCatalogs({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskCatalogs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateTaskCatalog",
+    "method": "POST",
+    "path_official": "odata/TaskCatalogs({key})/UiPath.Server.Configuration.OData.UpdateTaskCatalog",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskCatalogs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.CreateTaskCatalog",
+    "method": "POST",
+    "path_official": "odata/TaskCatalogs/UiPath.Server.Configuration.OData.CreateTaskCatalog",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskCatalogs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetFoldersForTaskCatalog(id={id})",
+    "method": "GET",
+    "path_official": "odata/TaskCatalogs/UiPath.Server.Configuration.OData.GetFoldersForTaskCatalog(id={id})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskCatalogs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetTaskCatalogExtendedDetails(taskCatalogId={taskCatalogId})",
+    "method": "GET",
+    "path_official": "odata/TaskCatalogs/UiPath.Server.Configuration.OData.GetTaskCatalogExtendedDetails(taskCatalogId={taskCatalogId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskCatalogs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetTaskCatalogsFromFoldersWithPermissions",
+    "method": "GET",
+    "path_official": "odata/TaskCatalogs/UiPath.Server.Configuration.OData.GetTaskCatalogsFromFoldersWithPermissions",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskCatalogs",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ShareToFolders",
+    "method": "POST",
+    "path_official": "odata/TaskCatalogs/UiPath.Server.Configuration.OData.ShareToFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskDefinitions",
+    "resource": "odata",
+    "action": "TaskDefinitions",
+    "method": "GET",
+    "path_official": "odata/TaskDefinitions",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskDefinitions",
+    "resource": "odata",
+    "action": "TaskDefinitions({key})",
+    "method": "GET",
+    "path_official": "odata/TaskDefinitions({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskDefinitions",
+    "resource": "odata",
+    "action": "TaskDefinitions({key})",
+    "method": "DELETE",
+    "path_official": "odata/TaskDefinitions({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskDefinitions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UpdateTaskDefinition",
+    "method": "POST",
+    "path_official": "odata/TaskDefinitions({key})/UiPath.Server.Configuration.OData.UpdateTaskDefinition",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskDefinitions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.CreateTaskDefinition",
+    "method": "POST",
+    "path_official": "odata/TaskDefinitions/UiPath.Server.Configuration.OData.CreateTaskDefinition",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskDefinitions",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetTaskDefinitionVersions(id={id})",
+    "method": "GET",
+    "path_official": "odata/TaskDefinitions/UiPath.Server.Configuration.OData.GetTaskDefinitionVersions(id={id})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskNotes",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.CreateTaskNote",
+    "method": "POST",
+    "path_official": "odata/TaskNotes/UiPath.Server.Configuration.OData.CreateTaskNote",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskNotes",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetByTaskId(taskId={taskId})",
+    "method": "GET",
+    "path_official": "odata/TaskNotes/UiPath.Server.Configuration.OData.GetByTaskId(taskId={taskId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskRetention",
+    "resource": "odata",
+    "action": "TaskRetention",
+    "method": "GET",
+    "path_official": "odata/TaskRetention",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskRetention",
+    "resource": "odata",
+    "action": "TaskRetention({key})",
+    "method": "GET",
+    "path_official": "odata/TaskRetention({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskRetention",
+    "resource": "odata",
+    "action": "TaskRetention({key})",
+    "method": "PUT",
+    "path_official": "odata/TaskRetention({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TaskRetention",
+    "resource": "odata",
+    "action": "TaskRetention({key})",
+    "method": "DELETE",
+    "path_official": "odata/TaskRetention({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "Tasks",
+    "method": "GET",
+    "path_official": "odata/Tasks",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "Tasks({key})",
+    "method": "GET",
+    "path_official": "odata/Tasks({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.AssignTasks",
+    "method": "POST",
+    "path_official": "odata/Tasks/UiPath.Server.Configuration.OData.AssignTasks",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.DeleteTasks",
+    "method": "POST",
+    "path_official": "odata/Tasks/UiPath.Server.Configuration.OData.DeleteTasks",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.EditTaskMetadata",
+    "method": "POST",
+    "path_official": "odata/Tasks/UiPath.Server.Configuration.OData.EditTaskMetadata",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetByKey(identifier={identifier})",
+    "method": "GET",
+    "path_official": "odata/Tasks/UiPath.Server.Configuration.OData.GetByKey(identifier={identifier})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetTaskPermissions",
+    "method": "GET",
+    "path_official": "odata/Tasks/UiPath.Server.Configuration.OData.GetTaskPermissions",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetTasksAcrossFolders",
+    "method": "GET",
+    "path_official": "odata/Tasks/UiPath.Server.Configuration.OData.GetTasksAcrossFolders",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetTasksAcrossFoldersForAdmin",
+    "method": "GET",
+    "path_official": "odata/Tasks/UiPath.Server.Configuration.OData.GetTasksAcrossFoldersForAdmin",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetTaskUsers(organizationUnitId={organizationUnitId})",
+    "method": "GET",
+    "path_official": "odata/Tasks/UiPath.Server.Configuration.OData.GetTaskUsers(organizationUnitId={organizationUnitId})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ReassignTasks",
+    "method": "POST",
+    "path_official": "odata/Tasks/UiPath.Server.Configuration.OData.ReassignTasks",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tasks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.UnassignTasks",
+    "method": "POST",
+    "path_official": "odata/Tasks/UiPath.Server.Configuration.OData.UnassignTasks",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tenants",
+    "resource": "odata",
+    "action": "Tenants",
+    "method": "GET",
+    "path_official": "odata/Tenants",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Tenants",
+    "resource": "odata",
+    "action": "Tenants({key})",
+    "method": "GET",
+    "path_official": "odata/Tenants({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestCaseDefinitions",
+    "resource": "odata",
+    "action": "TestCaseDefinitions",
+    "method": "GET",
+    "path_official": "odata/TestCaseDefinitions",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestCaseExecutions",
+    "resource": "odata",
+    "action": "TestCaseExecutions",
+    "method": "GET",
+    "path_official": "odata/TestCaseExecutions",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestCaseExecutions",
+    "resource": "odata",
+    "action": "TestCaseExecutions({key})",
+    "method": "GET",
+    "path_official": "odata/TestCaseExecutions({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueueItems",
+    "resource": "odata",
+    "action": "TestDataQueueItems",
+    "method": "GET",
+    "path_official": "odata/TestDataQueueItems",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueueItems",
+    "resource": "odata",
+    "action": "TestDataQueueItems({key})",
+    "method": "GET",
+    "path_official": "odata/TestDataQueueItems({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueues",
+    "resource": "odata",
+    "action": "TestDataQueues",
+    "method": "GET",
+    "path_official": "odata/TestDataQueues",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueues",
+    "resource": "odata",
+    "action": "TestDataQueues",
+    "method": "POST",
+    "path_official": "odata/TestDataQueues",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueues",
+    "resource": "odata",
+    "action": "TestDataQueues({key})",
+    "method": "GET",
+    "path_official": "odata/TestDataQueues({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueues",
+    "resource": "odata",
+    "action": "TestDataQueues({key})",
+    "method": "PUT",
+    "path_official": "odata/TestDataQueues({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestDataQueues",
+    "resource": "odata",
+    "action": "TestDataQueues({key})",
+    "method": "DELETE",
+    "path_official": "odata/TestDataQueues({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSetExecutions",
+    "resource": "odata",
+    "action": "TestSetExecutions",
+    "method": "GET",
+    "path_official": "odata/TestSetExecutions",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSetExecutions",
+    "resource": "odata",
+    "action": "TestSetExecutions({key})",
+    "method": "GET",
+    "path_official": "odata/TestSetExecutions({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSets",
+    "resource": "odata",
+    "action": "TestSets",
+    "method": "GET",
+    "path_official": "odata/TestSets",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSets",
+    "resource": "odata",
+    "action": "TestSets",
+    "method": "POST",
+    "path_official": "odata/TestSets",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSets",
+    "resource": "odata",
+    "action": "TestSets({key})",
+    "method": "GET",
+    "path_official": "odata/TestSets({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSets",
+    "resource": "odata",
+    "action": "TestSets({key})",
+    "method": "PUT",
+    "path_official": "odata/TestSets({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSets",
+    "resource": "odata",
+    "action": "TestSets({key})",
+    "method": "DELETE",
+    "path_official": "odata/TestSets({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSetSchedules",
+    "resource": "odata",
+    "action": "TestSetSchedules",
+    "method": "GET",
+    "path_official": "odata/TestSetSchedules",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSetSchedules",
+    "resource": "odata",
+    "action": "TestSetSchedules",
+    "method": "POST",
+    "path_official": "odata/TestSetSchedules",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSetSchedules",
+    "resource": "odata",
+    "action": "TestSetSchedules({key})",
+    "method": "GET",
+    "path_official": "odata/TestSetSchedules({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSetSchedules",
+    "resource": "odata",
+    "action": "TestSetSchedules({key})",
+    "method": "PUT",
+    "path_official": "odata/TestSetSchedules({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSetSchedules",
+    "resource": "odata",
+    "action": "TestSetSchedules({key})",
+    "method": "DELETE",
+    "path_official": "odata/TestSetSchedules({key})",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "TestSetSchedules",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.SetEnabled",
+    "method": "POST",
+    "path_official": "odata/TestSetSchedules/UiPath.Server.Configuration.OData.SetEnabled",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "Users",
+    "method": "GET",
+    "path_official": "odata/Users",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "Users",
+    "method": "POST",
+    "path_official": "odata/Users",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "Users({key})",
+    "method": "GET",
+    "path_official": "odata/Users({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "Users({key})",
+    "method": "PUT",
+    "path_official": "odata/Users({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "Users({key})",
+    "method": "PATCH",
+    "path_official": "odata/Users({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "Users({key})",
+    "method": "DELETE",
+    "path_official": "odata/Users({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.AssignRoles",
+    "method": "POST",
+    "path_official": "odata/Users({key})/UiPath.Server.Configuration.OData.AssignRoles",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ChangeUserCulture",
+    "method": "POST",
+    "path_official": "odata/Users({key})/UiPath.Server.Configuration.OData.ChangeUserCulture",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ToggleRole",
+    "method": "POST",
+    "path_official": "odata/Users({key})/UiPath.Server.Configuration.OData.ToggleRole",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.ChangeCulture",
+    "method": "POST",
+    "path_official": "odata/Users/UiPath.Server.Configuration.OData.ChangeCulture",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetCurrentPermissions",
+    "method": "GET",
+    "path_official": "odata/Users/UiPath.Server.Configuration.OData.GetCurrentPermissions",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetCurrentUser",
+    "method": "GET",
+    "path_official": "odata/Users/UiPath.Server.Configuration.OData.GetCurrentUser",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Users",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.Validate(userIds=[{userIds}])",
+    "method": "GET",
+    "path_official": "odata/Users/UiPath.Server.Configuration.OData.Validate(userIds=[{userIds}])",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Webhooks",
+    "resource": "odata",
+    "action": "Webhooks",
+    "method": "GET",
+    "path_official": "odata/Webhooks",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Webhooks",
+    "resource": "odata",
+    "action": "Webhooks",
+    "method": "POST",
+    "path_official": "odata/Webhooks",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Webhooks",
+    "resource": "odata",
+    "action": "Webhooks({key})",
+    "method": "GET",
+    "path_official": "odata/Webhooks({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Webhooks",
+    "resource": "odata",
+    "action": "Webhooks({key})",
+    "method": "PUT",
+    "path_official": "odata/Webhooks({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Webhooks",
+    "resource": "odata",
+    "action": "Webhooks({key})",
+    "method": "PATCH",
+    "path_official": "odata/Webhooks({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Webhooks",
+    "resource": "odata",
+    "action": "Webhooks({key})",
+    "method": "DELETE",
+    "path_official": "odata/Webhooks({key})",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Webhooks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.Ping",
+    "method": "POST",
+    "path_official": "odata/Webhooks({key})/UiPath.Server.Configuration.OData.Ping",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Webhooks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.GetEventTypes",
+    "method": "GET",
+    "path_official": "odata/Webhooks/UiPath.Server.Configuration.OData.GetEventTypes",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "Webhooks",
+    "resource": "odata",
+    "action": "UiPath.Server.Configuration.OData.TriggerCustom",
+    "method": "POST",
+    "path_official": "odata/Webhooks/UiPath.Server.Configuration.OData.TriggerCustom",
+    "patch": {
+      "add_parameters": [],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "AppTasks",
+    "resource": "tasks",
+    "action": "CompleteAppTask",
+    "method": "POST",
+    "path_official": "tasks/AppTasks/CompleteAppTask",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "AppTasks",
+    "resource": "tasks",
+    "action": "CreateAppTask",
+    "method": "POST",
+    "path_official": "tasks/AppTasks/CreateAppTask",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "AppTasks",
+    "resource": "tasks",
+    "action": "GetAppTaskById",
+    "method": "GET",
+    "path_official": "tasks/AppTasks/GetAppTaskById",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "AppTasks",
+    "resource": "tasks",
+    "action": "GetAppTaskByKey",
+    "method": "GET",
+    "path_official": "tasks/AppTasks/GetAppTaskByKey",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "AppTasks",
+    "resource": "tasks",
+    "action": "SaveAndReassignAppTasks",
+    "method": "POST",
+    "path_official": "tasks/AppTasks/SaveAndReassignAppTasks",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "AppTasks",
+    "resource": "tasks",
+    "action": "SaveAppTasksData",
+    "method": "PUT",
+    "path_official": "tasks/AppTasks/SaveAppTasksData",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "GenericTasks",
+    "resource": "tasks",
+    "action": "CompleteTask",
+    "method": "POST",
+    "path_official": "tasks/GenericTasks/CompleteTask",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "GenericTasks",
+    "resource": "tasks",
+    "action": "CreateTask",
+    "method": "POST",
+    "path_official": "tasks/GenericTasks/CreateTask",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "GenericTasks",
+    "resource": "tasks",
+    "action": "GetTaskDataById",
+    "method": "GET",
+    "path_official": "tasks/GenericTasks/GetTaskDataById",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "GenericTasks",
+    "resource": "tasks",
+    "action": "GetTaskDataByKey",
+    "method": "GET",
+    "path_official": "tasks/GenericTasks/GetTaskDataByKey",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "GenericTasks",
+    "resource": "tasks",
+    "action": "SaveAndReassignTask",
+    "method": "POST",
+    "path_official": "tasks/GenericTasks/SaveAndReassignTask",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "GenericTasks",
+    "resource": "tasks",
+    "action": "SaveTaskData",
+    "method": "PUT",
+    "path_official": "tasks/GenericTasks/SaveTaskData",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  },
+  {
+    "domain": "GenericTasks",
+    "resource": "tasks",
+    "action": "SaveTaskTags",
+    "method": "PUT",
+    "path_official": "tasks/GenericTasks/SaveTaskTags",
+    "patch": {
+      "add_parameters": [
+        {
+          "in": "header",
+          "name": "X-UIPATH-OrganizationUnitId",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "set_security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "set_pagination": null
+    }
+  }
+]

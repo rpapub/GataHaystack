@@ -1,0 +1,585 @@
+{
+  "totals": {
+    "all": 451,
+    "exact": 0,
+    "missing": 409,
+    "extra": 42
+  },
+  "by_domain": [
+    {
+      "domain": "Alerts",
+      "official": 4,
+      "implemented": 0,
+      "missing": 4,
+      "extra": 0
+    },
+    {
+      "domain": "AppTasks",
+      "official": 6,
+      "implemented": 0,
+      "missing": 6,
+      "extra": 0
+    },
+    {
+      "domain": "Assets",
+      "official": 13,
+      "implemented": 0,
+      "missing": 13,
+      "extra": 0
+    },
+    {
+      "domain": "Attachments",
+      "official": 3,
+      "implemented": 0,
+      "missing": 3,
+      "extra": 0
+    },
+    {
+      "domain": "AuditLogs",
+      "official": 3,
+      "implemented": 0,
+      "missing": 3,
+      "extra": 0
+    },
+    {
+      "domain": "Buckets",
+      "official": 15,
+      "implemented": 0,
+      "missing": 15,
+      "extra": 0
+    },
+    {
+      "domain": "BusinessRules",
+      "official": 10,
+      "implemented": 0,
+      "missing": 10,
+      "extra": 0
+    },
+    {
+      "domain": "Calendars",
+      "official": 6,
+      "implemented": 0,
+      "missing": 6,
+      "extra": 0
+    },
+    {
+      "domain": "CredentialStores",
+      "official": 10,
+      "implemented": 0,
+      "missing": 10,
+      "extra": 0
+    },
+    {
+      "domain": "DirectoryService",
+      "official": 4,
+      "implemented": 0,
+      "missing": 4,
+      "extra": 0
+    },
+    {
+      "domain": "ExecutionMedia",
+      "official": 4,
+      "implemented": 0,
+      "missing": 4,
+      "extra": 0
+    },
+    {
+      "domain": "Exports",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "Folders",
+      "official": 23,
+      "implemented": 0,
+      "missing": 23,
+      "extra": 0
+    },
+    {
+      "domain": "FoldersNavigation",
+      "official": 4,
+      "implemented": 0,
+      "missing": 4,
+      "extra": 0
+    },
+    {
+      "domain": "GenericTasks",
+      "official": 7,
+      "implemented": 0,
+      "missing": 7,
+      "extra": 0
+    },
+    {
+      "domain": "JobTriggers",
+      "official": 5,
+      "implemented": 0,
+      "missing": 5,
+      "extra": 0
+    },
+    {
+      "domain": "Jobs",
+      "official": 10,
+      "implemented": 0,
+      "missing": 10,
+      "extra": 0
+    },
+    {
+      "domain": "Libraries",
+      "official": 5,
+      "implemented": 0,
+      "missing": 5,
+      "extra": 0
+    },
+    {
+      "domain": "LicensesNamedUser",
+      "official": 1,
+      "implemented": 0,
+      "missing": 1,
+      "extra": 0
+    },
+    {
+      "domain": "LicensesRuntime",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "Licensing",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "Logs",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "Machines",
+      "official": 9,
+      "implemented": 0,
+      "missing": 9,
+      "extra": 0
+    },
+    {
+      "domain": "Maintenance",
+      "official": 3,
+      "implemented": 0,
+      "missing": 3,
+      "extra": 0
+    },
+    {
+      "domain": "PackageFeeds",
+      "official": 1,
+      "implemented": 0,
+      "missing": 1,
+      "extra": 0
+    },
+    {
+      "domain": "Permissions",
+      "official": 1,
+      "implemented": 0,
+      "missing": 1,
+      "extra": 0
+    },
+    {
+      "domain": "PersonalWorkspaces",
+      "official": 5,
+      "implemented": 0,
+      "missing": 5,
+      "extra": 0
+    },
+    {
+      "domain": "ProcessSchedules",
+      "official": 9,
+      "implemented": 0,
+      "missing": 9,
+      "extra": 0
+    },
+    {
+      "domain": "Processes",
+      "official": 6,
+      "implemented": 0,
+      "missing": 6,
+      "extra": 0
+    },
+    {
+      "domain": "QueueDefinitions",
+      "official": 11,
+      "implemented": 0,
+      "missing": 11,
+      "extra": 0
+    },
+    {
+      "domain": "QueueItemComments",
+      "official": 6,
+      "implemented": 0,
+      "missing": 6,
+      "extra": 0
+    },
+    {
+      "domain": "QueueItemEvents",
+      "official": 3,
+      "implemented": 0,
+      "missing": 3,
+      "extra": 0
+    },
+    {
+      "domain": "QueueItems",
+      "official": 13,
+      "implemented": 0,
+      "missing": 13,
+      "extra": 0
+    },
+    {
+      "domain": "QueueProcessingRecords",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "QueueRetention",
+      "official": 4,
+      "implemented": 0,
+      "missing": 4,
+      "extra": 0
+    },
+    {
+      "domain": "Queues",
+      "official": 4,
+      "implemented": 0,
+      "missing": 4,
+      "extra": 0
+    },
+    {
+      "domain": "ReleaseRetention",
+      "official": 4,
+      "implemented": 0,
+      "missing": 4,
+      "extra": 0
+    },
+    {
+      "domain": "Releases",
+      "official": 16,
+      "implemented": 0,
+      "missing": 16,
+      "extra": 0
+    },
+    {
+      "domain": "RobotLogs",
+      "official": 3,
+      "implemented": 0,
+      "missing": 3,
+      "extra": 0
+    },
+    {
+      "domain": "Robots",
+      "official": 16,
+      "implemented": 0,
+      "missing": 16,
+      "extra": 0
+    },
+    {
+      "domain": "Roles",
+      "official": 8,
+      "implemented": 0,
+      "missing": 8,
+      "extra": 0
+    },
+    {
+      "domain": "Sessions",
+      "official": 9,
+      "implemented": 0,
+      "missing": 9,
+      "extra": 0
+    },
+    {
+      "domain": "Settings",
+      "official": 18,
+      "implemented": 0,
+      "missing": 18,
+      "extra": 0
+    },
+    {
+      "domain": "Stats",
+      "official": 5,
+      "implemented": 0,
+      "missing": 5,
+      "extra": 0
+    },
+    {
+      "domain": "Status",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "TaskActivities",
+      "official": 1,
+      "implemented": 0,
+      "missing": 1,
+      "extra": 0
+    },
+    {
+      "domain": "TaskCatalogs",
+      "official": 9,
+      "implemented": 0,
+      "missing": 9,
+      "extra": 0
+    },
+    {
+      "domain": "TaskDefinitions",
+      "official": 6,
+      "implemented": 0,
+      "missing": 6,
+      "extra": 0
+    },
+    {
+      "domain": "TaskForms",
+      "official": 8,
+      "implemented": 0,
+      "missing": 8,
+      "extra": 0
+    },
+    {
+      "domain": "TaskNotes",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "TaskRetention",
+      "official": 4,
+      "implemented": 0,
+      "missing": 4,
+      "extra": 0
+    },
+    {
+      "domain": "Tasks",
+      "official": 12,
+      "implemented": 0,
+      "missing": 12,
+      "extra": 0
+    },
+    {
+      "domain": "Tenants",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "TestAutomation",
+      "official": 13,
+      "implemented": 0,
+      "missing": 13,
+      "extra": 0
+    },
+    {
+      "domain": "TestCaseDefinitions",
+      "official": 1,
+      "implemented": 0,
+      "missing": 1,
+      "extra": 0
+    },
+    {
+      "domain": "TestCaseExecutions",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "TestDataQueueActions",
+      "official": 7,
+      "implemented": 0,
+      "missing": 7,
+      "extra": 0
+    },
+    {
+      "domain": "TestDataQueueItems",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "TestDataQueues",
+      "official": 5,
+      "implemented": 0,
+      "missing": 5,
+      "extra": 0
+    },
+    {
+      "domain": "TestSetExecutions",
+      "official": 2,
+      "implemented": 0,
+      "missing": 2,
+      "extra": 0
+    },
+    {
+      "domain": "TestSetSchedules",
+      "official": 6,
+      "implemented": 0,
+      "missing": 6,
+      "extra": 0
+    },
+    {
+      "domain": "TestSets",
+      "official": 5,
+      "implemented": 0,
+      "missing": 5,
+      "extra": 0
+    },
+    {
+      "domain": "Translations",
+      "official": 1,
+      "implemented": 0,
+      "missing": 1,
+      "extra": 0
+    },
+    {
+      "domain": "Users",
+      "official": 13,
+      "implemented": 0,
+      "missing": 13,
+      "extra": 0
+    },
+    {
+      "domain": "Webhooks",
+      "official": 9,
+      "implemented": 0,
+      "missing": 9,
+      "extra": 0
+    },
+    {
+      "domain": "assets (alpha),uipathcloud",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 4
+    },
+    {
+      "domain": "assets (alpha),uipathcloud,inventory",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 1
+    },
+    {
+      "domain": "debug",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 1
+    },
+    {
+      "domain": "folders (alpha),uipathcloud",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 4
+    },
+    {
+      "domain": "folders (alpha),uipathcloud,inventory",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 1
+    },
+    {
+      "domain": "libraries (alpha),uipathcloud",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 4
+    },
+    {
+      "domain": "libraries (alpha),uipathcloud,debug",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 1
+    },
+    {
+      "domain": "libraries (alpha),uipathcloud,inventory",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 1
+    },
+    {
+      "domain": "machines (beta),uipathcloud",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 4
+    },
+    {
+      "domain": "machines (beta),uipathcloud,inventory",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 1
+    },
+    {
+      "domain": "oauth2,uipathcloud",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 5
+    },
+    {
+      "domain": "packages (alpha),uipathcloud",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 4
+    },
+    {
+      "domain": "packages (alpha),uipathcloud,inventory",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 1
+    },
+    {
+      "domain": "processes (alpha),uipathcloud",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 4
+    },
+    {
+      "domain": "processes (alpha),uipathcloud,inventory",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 1
+    },
+    {
+      "domain": "tenants (alpha),uipathcloud",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 4
+    },
+    {
+      "domain": "tenants (alpha),uipathcloud,inventory",
+      "official": 0,
+      "implemented": 0,
+      "missing": 0,
+      "extra": 1
+    }
+  ],
+  "notes": "This is a surface-level mapping; schema/param diffs are not fully analyzed."
+}
