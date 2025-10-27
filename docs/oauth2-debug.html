@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>OAuth2 Callback Debug</title>
+  <style>
+    body { font-family: monospace; padding: 20px; }
+    .param { margin: 10px 0; padding: 10px; background: #f0f0f0; }
+    .label { font-weight: bold; color: #333; }
+    .value { color: #007acc; }
+  </style>
+</head>
+<body>
+  <h1>OAuth2 Callback Debug</h1>
+  <p>This page shows what parameters UiPath returned in the redirect.</p>
+
+  <div id="output"></div>
+
+  <script>
+    const output = document.getElementById('output');
+
+    // Get query parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const hashParams = new URLSearchParams(window.location.hash.substring(1));
+
+    output.innerHTML += '<h2>Query String Parameters (?' + window.location.search + ')</h2>';
+
+    if (urlParams.toString()) {
+      urlParams.forEach((value, key) => {
+        output.innerHTML += `<div class="param"><span class="label">${key}:</span> <span class="value">${value}</span></div>`;
+      });
+    } else {
+      output.innerHTML += '<p>No query parameters</p>';
+    }
+
+    output.innerHTML += '<h2>Hash Parameters (#' + window.location.hash + ')</h2>';
+
+    if (hashParams.toString()) {
+      hashParams.forEach((value, key) => {
+        output.innerHTML += `<div class="param"><span class="label">${key}:</span> <span class="value">${value}</span></div>`;
+      });
+    } else {
+      output.innerHTML += '<p>No hash parameters</p>';
+    }
+
+    output.innerHTML += '<h2>Full URL</h2>';
+    output.innerHTML += `<div class="param">${window.location.href}</div>`;
+
+    // Check if this was opened from Swagger
+    output.innerHTML += '<h2>Window Opener</h2>';
+    if (window.opener) {
+      output.innerHTML += '<p>Opened from another window (Swagger UI)</p>';
+      try {
+        if (window.opener.swaggerUIRedirectOauth2) {
+          output.innerHTML += '<p style="color:green">✓ swaggerUIRedirectOauth2 is accessible</p>';
+          const oauth2 = window.opener.swaggerUIRedirectOauth2;
+          output.innerHTML += `<div class="param"><span class="label">Expected state:</span> <span class="value">${oauth2.state || 'undefined'}</span></div>`;
+        } else {
+          output.innerHTML += '<p style="color:red">✗ swaggerUIRedirectOauth2 not found</p>';
+        }
+      } catch(e) {
+        output.innerHTML += `<p style="color:red">✗ Error accessing opener: ${e.message}</p>`;
+      }
+    } else {
+      output.innerHTML += '<p>Not opened from another window</p>';
+    }
+  </script>
+</body>
+</html>
