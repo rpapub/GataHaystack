@@ -20,6 +20,7 @@
   <div id="swagger-ui"></div>
 
   <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
+  <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-standalone-preset.js"></script>
   <script>
     window.ui = SwaggerUIBundle({
       url: 'openapi-merged.yml',
@@ -27,10 +28,11 @@
       deepLinking: true,
       presets: [
         SwaggerUIBundle.presets.apis,
-        SwaggerUIBundle.SwaggerUIStandalonePreset
+        SwaggerUIStandalonePreset
       ],
       layout: 'StandaloneLayout',
       // Enable OAuth2 authentication
+      // Dynamically construct redirect URL (works with localhost and ngrok)
       oauth2RedirectUrl: window.location.origin + window.location.pathname.replace('swagger.html', '') + 'oauth2-redirect.html',
       persistAuthorization: true,
       // Display operation IDs
@@ -44,14 +46,14 @@
     // NOTE: Replace the clientId with your actual UiPath OAuth2 client ID
     window.ui.initOAuth({
       clientId: 'YOUR_CLIENT_ID_HERE', // Replace with your OAuth2 client ID
-      clientSecret: '', // For public clients, leave empty and use PKCE
+      clientSecret: '', // For confidential clients, enter secret in the Authorize dialog
       realm: 'uipath',
       appName: 'UiPath Orchestrator API Explorer',
       scopeSeparator: ' ',
       scopes: 'OR.Administration OR.Assets OR.Execution OR.Folders OR.Jobs OR.Monitoring OR.Robots OR.Settings OR.Tasks OR.Users',
       additionalQueryStringParams: {},
-      useBasicAuthenticationWithAccessCodeGrant: false,
-      usePkceWithAuthorizationCodeGrant: true // Enable PKCE for better security
+      useBasicAuthenticationWithAccessCodeGrant: true, // Use Basic Auth for confidential apps
+      usePkceWithAuthorizationCodeGrant: false // Disable PKCE for confidential applications
     });
   </script>
 </body>

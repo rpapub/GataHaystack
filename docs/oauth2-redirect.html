@@ -6,19 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
+  <div id="debug" style="display:none; font-family:monospace; padding:20px;"></div>
   <script>
     'use strict';
     (function() {
+      function debug(msg) {
+        console.log('[OAuth2 Redirect]', msg);
+        var el = document.getElementById('debug');
+        el.style.display = 'block';
+        el.innerHTML += msg + '<br>';
+      }
+
       function run() {
+        debug('Starting OAuth2 redirect handler');
+        debug('Full URL: ' + window.location.href);
+
+        if (!window.opener) {
+          debug('ERROR: No window.opener - was this opened in a popup?');
+          document.body.innerHTML = '<p>Error: This page must be opened in a popup from Swagger UI</p>';
+          return;
+        }
+
+        if (!window.opener.swaggerUIRedirectOauth2) {
+          debug('ERROR: window.opener.swaggerUIRedirectOauth2 not found');
+          document.body.innerHTML = '<p>Error: Cannot communicate with Swagger UI</p>';
+          return;
+        }
+
         var oauth2 = window.opener.swaggerUIRedirectOauth2;
+        debug('OAuth2 object found');
+        debug('Expected state: ' + (oauth2.state || 'undefined'));
         var sentState = oauth2.state;
         var redirectUrl = oauth2.redirectUrl;
         var isValid, qp, arr;
 
         if (/code|token|error/.test(window.location.hash)) {
           qp = window.location.hash.substring(1).replace('?', '&');
+          debug('Params from hash: ' + qp);
         } else {
           qp = location.search.substring(1);
+          debug('Params from query string: ' + qp);
         }
 
         arr = qp.split("&");
@@ -36,7 +63,13 @@
         var token = (arr.find(function(v) { return v.name === "access_token"; }) || {}).value;
         var error = (arr.find(function(v) { return v.name === "error"; }) || {}).value;
 
+        debug('Response type: ' + responseType);
+        debug('Received state: ' + (receivedState || 'undefined'));
+        debug('Authorization code: ' + (code ? code.substring(0, 20) + '...' : 'undefined'));
+        debug('Error: ' + (error || 'none'));
+
         isValid = sentState === receivedState;
+        debug('State valid: ' + isValid);
 
         if ((responseType === "code" || responseType === "query") && !receivedState) {
           isValid = true;
