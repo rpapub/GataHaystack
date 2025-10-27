@@ -9,9 +9,39 @@ __pycache__/
 # Environments
 .env
 *.env
+!.env.example
+!*.env.example
 .venv
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
+# IDE and Editor
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Secrets and Tokens
+access_token.txt
+*_token*.txt
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Logs and Debug Files
+*.log
+*_debug.log
+
+# Temporary and Backup Files
+*.bak
+*.tmp
+.DS_Store
+
+# Dependency Lock Files
+uv.lock
